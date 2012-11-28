@@ -1,0 +1,17 @@
+<package>
+  <description brief="we_narrater">
+
+     we_narrater
+
+  </description>
+  <author>James Tse</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/we_narrater</url>
+  <depend package="roscpp"/>
+  <depend package="xftts"/>
+  <depend package="xfspeech"/>
+
+</package>
+
+

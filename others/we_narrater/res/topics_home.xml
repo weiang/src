@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<narration>
+<topic name="wrighteagle@home">
+	<topic name="概述">
+		<content pos="[2.0,6.3,0]" arm="[4.0,6.5,1.5]">大家好,我是可佳,让我带大家参观我们的实验室环境</content>
+	</topic>
+	<topic name="中途点" necc="T">
+		<content pos="[4.0,7.0,0]" arm="[5.0,6.0,0.8]">这间房子是起居室,右手边是沙发</content>
+	</topic>
+	<topic name="家具">
+		<topic name="奖杯柜子"  pos="[2.0,3.2,-1.57]" arm="[1.0,3.2,1.5]">
+			<content>这里是书架</content>
+                        <content>里面存放着我的兄弟姐妹们获得的奖状和证书</content>
+                        <content>目前还没有我的，但是我一定会拿到的</content>
+		</topic>
+		<topic name="小柜子" pos="[5.5,2.0,0]" arm="[5.5,1.0,1.0]">
+			<content>这里是小柜子</content>
+                        <content>放了各种稀奇古怪的小东西</content>
+		</topic>
+		<topic name="餐桌" pos="[7.0,3.0,1.57]" arm="[6.0,3.0,1.0]">
+			<content>这里是餐桌,但是没人在这吃饭</content>
+		</topic>
+		<topic name="冰箱" pos="[8.0,1.5,1.57]" arm="[8.7,1.2,1.0]">
+			<content>这里是冰箱,里面应该有很多好吃的</content>
+		</topic>
+	</topic>
+	<topic name="卧室" pos="[7.5,6.5,1.57]" arm="[6.6,6.0,1.5]">
+		<content>这里是卧室,我的左手边是衣厨</content>
+	</topic>
+</topic>
+  
+</narration>

@@ -1,0 +1,315 @@
+This is XeTeX, Version 3.1415926-2.4-0.9998 (TeX Live 2012/Debian) (format=xelatex 2012.10.25)  18 NOV 2012 17:14
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**f.tex
+(./f.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, et
+hiopic, farsi, arabic, pinyin, croatian, bulgarian, ukrainian, russian, slovak,
+ czech, danish, dutch, usenglishmax, ukenglish, finnish, french, basque, ngerma
+n, german, swissgerman, ngerman-x-2012-05-30, german-x-2012-05-30, monogreek, g
+reek, ibycus, ancientgreek, hungarian, bengali, tamil, hindi, telugu, gujarati,
+ sanskrit, malayalam, kannada, assamese, marathi, oriya, panjabi, italian, lati
+n, latvian, lithuanian, mongolian, mongolianlmc, nynorsk, bokmal, indonesian, e
+speranto, coptic, welsh, irish, interlingua, serbian, serbianc, slovenian, friu
+lan, romansh, estonian, romanian, armenian, uppersorbian, turkish, afrikaans, i
+celandic, kurmanji, polish, portuguese, galician, catalan, spanish, swedish, th
+ai, loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf/tex/latex/CJK/CJK.sty
+Package: CJK 2012/05/07 4.8.3
+
+(/usr/share/texmf/tex/latex/CJK/mule/MULEenc.sty
+Package: MULEenc 2012/05/07 4.8.3
+)
+(/usr/share/texmf/tex/latex/CJK/CJK.enc
+File: CJK.enc 2012/05/07 4.8.3
+)
+LaTeX Info: Redefining \selectfont on input line 755.
+\CJK@indent=\box26
+)
+(/usr/share/texmf/tex/latex/CJK/standard.bdg
+File: standard.bdg 2012/05/07 4.8.3
+)
+(/usr/share/texmf/tex/latex/CJK/extended.enc
+File: extended.enc 2012/05/07 4.8.3
+)
+(/usr/share/texmf/tex/latex/CJK/extended.chr
+File: extended.chr 2012/05/07 4.8.3
+) (./f.aux)
+\openout1 = `f.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+Missing character: There is no 常 in font cmr17!
+Missing character: There is no 用 in font cmr17!
+Missing character: There is no 模 in font cmr17!
+Missing character: There is no 板 in font cmr17!
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 30.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 30.
+ (./f.toc
+Missing character: There is no 简 in font cmbx12!
+Missing character: There is no 介 in font cmbx12!
+Missing character: There is no 源 in font cmbx12!
+Missing character: There is no 文 in font cmbx12!
+Missing character: There is no 件 in font cmbx12!
+Missing character: There is no 结 in font cmbx12!
+Missing character: There is no 论 in font cmbx12!
+)
+\tf@toc=\write3
+\openout3 = `f.toc'.
+
+Missing character: There is no 简 in font cmbx12!
+Missing character: There is no 介 in font cmbx12!
+Missing character: There is no 是 in font cmr12!
+Missing character: There is no 一 in font cmr12!
+Missing character: There is no 个 in font cmr12!
+Missing character: There is no 宏 in font cmr12!
+Missing character: There is no 包 in font cmr12!
+Missing character: There is no 目 in font cmr12!
+Missing character: There is no 的 in font cmr12!
+Missing character: There is no 是 in font cmr12!
+Missing character: There is no 使 in font cmr12!
+Missing character: There is no 作 in font cmr12!
+Missing character: There is no 者 in font cmr12!
+Missing character: There is no 能 in font cmr12!
+Missing character: There is no 够 in font cmr12!
+Missing character: There is no 利 in font cmr12!
+Missing character: There is no 用 in font cmr12!
+Missing character: There is no 一 in font cmr12!
+Missing character: There is no 个 in font cmr12!
+Missing character: There is no 预 in font cmr12!
+Missing character: There is no 先 in font cmr12!
+Missing character: There is no 定 in font cmr12!
+Missing character: There is no 义 in font cmr12!
+Missing character: There is no 好 in font cmr12!
+Missing character: There is no 的 in font cmr12!
+Missing character: There is no 专 in font cmr12!
+Missing character: There is no 业 in font cmr12!
+Missing character: There is no 页 in font cmr12!
+Missing character: There is no 面 in font cmr12!
+Missing character: There is no 设 in font cmr12!
+Missing character: There is no 置 in font cmr12!
+Missing character: There is no 从 in font cmr12!
+Missing character: There is no 而 in font cmr12!
+Missing character: There is no 得 in font cmr12!
+Missing character: There is no 以 in font cmr12!
+Missing character: There is no 高 in font cmr12!
+Missing character: There is no 质 in font cmr12!
+Missing character: There is no 量 in font cmr12!
+Missing character: There is no 的 in font cmr12!
+Missing character: There is no 排 in font cmr12!
+Missing character: There is no 版 in font cmr12!
+Missing character: There is no 和 in font cmr12!
+Missing character: There is no 打 in font cmr12!
+Missing character: There is no 印 in font cmr12!
+Missing character: There is no 他 in font cmr12!
+Missing character: There is no 们 in font cmr12!
+Missing character: There is no 的 in font cmr12!
+Missing character: There is no 作 in font cmr12!
+Missing character: There is no 品 in font cmr12!
+Missing character: There is no 将 in font cmr12!
+Missing character: There is no 空 in font cmr12!
+Missing character: There is no 格 in font cmr12!
+Missing character: There is no 和 in font cmr12!
+Missing character: There is no 制 in font cmr12!
+Missing character: There is no 表 in font cmr12!
+Missing character: There is no 符 in font cmr12!
+Missing character: There is no 视 in font cmr12!
+Missing character: There is no 为 in font cmr12!
+Missing character: There is no 相 in font cmr12!
+Missing character: There is no 同 in font cmr12!
+Missing character: There is no 的 in font cmr12!
+Missing character: There is no 距 in font cmr12!
+Missing character: There is no 离 in font cmr12!
+Missing character: There is no 多 in font cmr12!
+Missing character: There is no 个 in font cmr12!
+Missing character: There is no 连 in font cmr12!
+Missing character: There is no 续 in font cmr12!
+Missing character: There is no 的 in font cmr12!
+Missing character: There is no 空 in font cmr12!
+Missing character: There is no 白 in font cmr12!
+Missing character: There is no 字 in font cmr12!
+Missing character: There is no 符 in font cmr12!
+Missing character: There is no 等 in font cmr12!
+Missing character: There is no 同 in font cmr12!
+Missing character: There is no 为 in font cmr12!
+Missing character: There is no 一 in font cmr12!
+Missing character: There is no 个 in font cmr12!
+Missing character: There is no 空 in font cmr12!
+Missing character: There is no 白 in font cmr12!
+Missing character: There is no 字 in font cmr12!
+Missing character: There is no 符 in font cmr12!
+Missing character: There is no 源 in font cmbx12!
+Missing character: There is no 文 in font cmbx12!
+Missing character: There is no 件 in font cmbx12!
+Missing character: There is no 源 in font cmr12!
+Missing character: There is no 文 in font cmr12!
+Missing character: There is no 件 in font cmr12!
+Missing character: There is no 格 in font cmr12!
+Missing character: There is no 式 in font cmr12!
+Missing character: There is no 为 in font cmr12!
+Missing character: There is no 普 in font cmr12!
+Missing character: There is no 通 in font cmr12!
+Missing character: There is no 的 in font cmr12!
+Missing character: There is no 文 in font cmr12!
+Missing character: There is no 件 in font cmr12!
+Missing character: There is no 你 in font cmr12!
+Missing character: There is no 可 in font cmr12!
+Missing character: There is no 以 in font cmr12!
+Missing character: There is no 使 in font cmr12!
+Missing character: There is no 用 in font cmr12!
+Missing character: There is no 任 in font cmr12!
+Missing character: There is no 何 in font cmr12!
+Missing character: There is no 文 in font cmr12!
+Missing character: There is no 本 in font cmr12!
+Missing character: There is no 编 in font cmr12!
+Missing character: There is no 辑 in font cmr12!
+Missing character: There is no 器 in font cmr12!
+Missing character: There is no 来 in font cmr12!
+Missing character: There is no 创 in font cmr12!
+Missing character: There is no 建 in font cmr12!
+Missing character: There is no 源 in font cmr12!
+Missing character: There is no 文 in font cmr12!
+Missing character: There is no 件 in font cmr12!
+Missing character: There is no 不 in font cmr12!
+Missing character: There is no 仅 in font cmr12!
+Missing character: There is no 包 in font cmr12!
+Missing character: There is no 括 in font cmr12!
+Missing character: There is no 你 in font cmr12!
+Missing character: There is no 要 in font cmr12!
+Missing character: There is no 排 in font cmr12!
+Missing character: There is no 版 in font cmr12!
+Missing character: There is no 的 in font cmr12!
+Missing character: There is no 文 in font cmr12!
+Missing character: There is no 本 in font cmr12!
+Missing character: There is no 还 in font cmr12!
+Missing character: There is no 包 in font cmr12!
+Missing character: There is no 括 in font cmr12!
+Missing character: There is no 所 in font cmr12!
+Missing character: There is no 能 in font cmr12!
+Missing character: There is no 识 in font cmr12!
+Missing character: There is no 别 in font cmr12!
+Missing character: There is no 的 in font cmr12!
+Missing character: There is no 如 in font cmr12!
+Missing character: There is no 何 in font cmr12!
+Missing character: There is no 排 in font cmr12!
+Missing character: There is no 版 in font cmr12!
+Missing character: There is no 这 in font cmr12!
+Missing character: There is no 些 in font cmr12!
+Missing character: There is no 文 in font cmr12!
+Missing character: There is no 本 in font cmr12!
+Missing character: There is no 的 in font cmr12!
+Missing character: There is no 命 in font cmr12!
+Missing character: There is no 令 in font cmr12!
+Missing character: There is no 结 in font cmbx12!
+Missing character: There is no 论 in font cmbx12!
+Missing character: There is no 我 in font cmr12!
+Missing character: There is no 看 in font cmr12!
+Missing character: There is no 行 in font cmr12!
+ [1
+
+] (./f.aux) ) 
+Here is how much of TeX's memory you used:
+ 1252 strings out of 494003
+ 12474 string characters out of 3152808
+ 72271 words of memory out of 3000000
+ 4572 multiletter control sequences out of 15000+200000
+ 6063 words of font info for 22 fonts, out of 3000000 for 9000
+ 1144 hyphenation exceptions out of 8191
+ 22i,6n,19p,142b,442s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on f.pdf (1 page).

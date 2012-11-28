@@ -1,0 +1,10 @@
+\documentclass[a4paper,11pt]{article}
+\title{\LaTeXe}
+\author{weiang}
+\date{\today}
+\begin{document}
+\maketitle
+ \LaTeX\ is a powerful tool!!!
+ hehe
+ 
+\end{document}  

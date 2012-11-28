@@ -1,0 +1,6 @@
+<launch>
+    <node name="narrater" pkg="we_narrater" type="dialogue" output="screen">
+        <param name="questions_path" value="$(find we_narrater)/res/questions.xml"/>
+        <param name="topics_path" value="$(find we_narrater)/res/topics.xml"/>
+    </node>
+</launch>

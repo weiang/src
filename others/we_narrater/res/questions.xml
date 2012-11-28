@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<questions>
+  <option type="TF">
+    <question>科大的成立是中国科技史和教育史上的大事件，科大对中国的科技和教育事业也做出了杰出的贡献，您想了解这些内容吗？</question>
+    <answer name="F">
+      <keyword>不</keyword>
+      <keyword>算了</keyword>
+      <keyword>没兴趣</keyword>
+    </answer>
+    <answer name="T">
+      <keyword>想</keyword>
+      <keyword>好</keyword>
+      <keyword>需要</keyword>
+      <keyword>了解</keyword>
+      <keyword>行</keyword>
+      <keyword>可以</keyword>
+      <keyword>像</keyword>
+      <keyword>随便</keyword>
+      <option>
+        <question>关于科大的办学成就，这里提供了“科研成果”，“人物”，和“办学特色”，三方面的解说， 您想了解其中的哪几个？</question>
+        <answer name="科研成果">
+          <keyword>科研成果</keyword>
+          <keyword>第一</keyword>
+          <keyword>前两</keyword>
+          <keyword>所有</keyword>
+          <keyword>前二</keyword>
+          <keyword>都想</keyword>
+          <option>
+            <question>中国科大为中国教育作出了巨大的贡献，“桃李芬芳”、介绍了科大对人才的培养，“教学创新”、讲述了科大在办学上敢为人先，你想了解桃李芬芳的内容，还是教学创新的内容，还是两个都要了解呢？</question>
+            <answer name="桃李芬芳">
+              <keyword>桃李芬芳</keyword>
+              <keyword>前两</keyword>
+              <keyword>所有</keyword>
+              <keyword>前二</keyword>
+              <keyword>第二</keyword>
+              <keyword>第一</keyword>
+              <keyword>都想</keyword>     
+              <topic>桃李芬芳</topic>
+            </answer>
+            <answer name="教学创新">
+              <keyword>教学创新</keyword>
+              <keyword>所有</keyword>
+              <keyword>第三</keyword>
+              <keyword>后二</keyword>
+              <keyword>都想</keyword>
+              <option>
+                <question>中国科大做出的教学创新、内容丰富，这方面解说有，“工农兵学员”，“回炉班”，“改革先声”，和“恢复高考”，您想了解哪几个？</question>
+                <answer name="工农兵学员">
+                  <keyword>工农兵学员</keyword>
+                  <keyword>第一</keyword>
+                  <keyword>前两</keyword>
+          		  <keyword>所有</keyword>
+          		  <keyword>前二</keyword>
+         		  <keyword>都想</keyword>
+                  <topic>工农兵学员</topic>
+                </answer>
+                <answer name="回炉班">
+                  <keyword>回炉班</keyword>
+                  <keyword>前两</keyword>
+                  <keyword>所有</keyword>
+                  <keyword>前二</keyword>
+                  <keyword>第二</keyword>
+                  <keyword>都想</keyword>  
+                  <topic>回炉班</topic>
+                </answer>
+                <answer name="改革先声">
+                  <keyword>改革先声</keyword>
+                  <keyword>所有</keyword>
+                  <keyword>第三</keyword>
+                  <keyword>后二</keyword>
+                  <keyword>都想</keyword>
+                  <topic>改革先声</topic>
+                </answer>
+                <answer name="恢复高考">
+                  <keyword>恢复高考</keyword>
+                  <keyword>所有</keyword>
+                  <keyword>第四</keyword>
+                  <keyword>后二</keyword>
+                  <keyword>都想</keyword>
+                  <topic>恢复高考</topic>
+                </answer>
+              </option>
+            </answer>
+          </option>
+        </answer>
+        <answer name="人物">
+          <keyword>人物</keyword>
+          <keyword>第二</keyword>
+          <keyword>前两</keyword>
+          <keyword>所有</keyword>
+          <keyword>前二</keyword>
+          <keyword>都想</keyword>
+          <option type="TF">
+            <question>科大是杰出人物的聚集地，这里涌现了一批大师人物，您想了解这些大师们吗？</question>
+            <answer name="F">
+     		  <keyword>不</keyword>
+              <keyword>算了</keyword>
+              <keyword>没兴趣</keyword>
+            </answer>
+            <answer name="T">
+      		  <keyword>想</keyword>
+      		  <keyword>好</keyword>
+      	      <keyword>需要</keyword>
+      	      <keyword>了解</keyword>
+      	      <keyword>行</keyword>
+     		  <keyword>可以</keyword>
+      		  <keyword>像</keyword>
+     		  <keyword>随便</keyword>
+              <topic>大师云集</topic>
+              <topic>两钱介绍</topic>
+            </answer>
+          </option>
+          <option type="TF">
+            <question>科大的成立和成长受到了领导们的关心，您想了解吗？</question>
+            <answer name="F">
+               <keyword>不</keyword>
+              <keyword>算了</keyword>
+              <keyword>没兴趣</keyword>
+            </answer>
+            <answer name="T">
+              <keyword>想</keyword>
+      		  <keyword>好</keyword>
+      	      <keyword>需要</keyword>
+      	      <keyword>了解</keyword>
+      	      <keyword>行</keyword>
+     		  <keyword>可以</keyword>
+      		  <keyword>像</keyword>
+     		  <keyword>随便</keyword>
+              <topic>首届领导</topic>
+              <topic>春风化雨</topic>
+            </answer>
+          </option>
+        </answer>
+        <answer name="办学特色">
+          <keyword>第三</keyword>
+          <keyword>后两</keyword>
+          <keyword>所有</keyword>
+          <keyword>后二</keyword>
+          <keyword>都想</keyword>
+          <keyword>办学特色</keyword>
+          <option>
+            <question>科大是一所具有鲜明办学特色的学校，这集中体现在科大的“校园风貌”和“办学成果”上，您想了解校园风貌，还是办学成果呢？</question>
+            <answer name="校园风貌">
+              <keyword>校园风貌</keyword>
+              <keyword>两个都</keyword>
+              <keyword>所有</keyword>
+              <keyword>第一</keyword>
+              <keyword>都想</keyword>     
+              <topic>桃李芬芳</topic>
+              <topic>优良校风</topic>
+              <topic>多彩校园</topic>
+            </answer>
+            <answer name="办学成果">
+              <keyword>办学成果</keyword>
+              <keyword>两个都</keyword>
+              <keyword>所有</keyword>
+              <keyword>第二</keyword>
+              <keyword>都想</keyword> 
+              <topic>桃李芬芳</topic>
+              <topic>工农兵学员</topic>
+              <topic>回炉班</topic>
+              <topic>改革先声</topic>
+              <topic>恢复高考</topic>
+            </answer>
+          </option>
+        </answer>
+      </option>
+    </answer>
+  </option>
+  <option type="TF">
+    <question>中国科学技术大学、是一所拥有、五十四年历史的高等教育学校，您对她的历史感兴趣吗？</question>
+    <answer name="F">
+     <keyword>不</keyword>
+     <keyword>算了</keyword>
+     <keyword>没兴趣</keyword>
+    </answer>
+    <answer name="T">
+      <keyword>感兴趣</keyword>
+      <keyword>是的</keyword>
+      <keyword>嗯</keyword>
+      <option>
+        <question>关于科大的历史，我们提供了、成立过程、成立之初、南迁重建三个方面的解说，分别讲述了、科大如何成立，成立初期的情况和南迁至合肥重建的过程，您想了解哪几方面呢？</question>
+        <answer name="成立过程">
+          <keyword>成立过程</keyword>
+          <keyword>第一</keyword>
+          <keyword>前两</keyword>
+          <keyword>所有</keyword>
+          <keyword>前二</keyword>
+          <keyword>都想</keyword>
+          <option>
+            <question>在科大成立的过程中，经历了、酝酿审批，协力筹建，和隆重成立、这三个阶段，您想了解哪个阶段？</question>
+            <answer name="酝酿审批">
+              <keyword>酝酿审批</keyword>
+              <keyword>第一</keyword>
+              <keyword>前两</keyword>
+              <keyword>所有</keyword>
+              <keyword>前二</keyword>
+              <keyword>都想</keyword>
+              <topic>酝酿审批</topic>
+            </answer>
+            <answer name="协力筹建">
+              <keyword>协力筹建</keyword>
+              <keyword>前两</keyword>
+              <keyword>所有</keyword>
+              <keyword>前二</keyword>
+              <keyword>第二</keyword>
+              <keyword>都想</keyword>  
+              <topic>协力筹建</topic>
+            </answer>
+            <answer name="隆重成立">
+              <keyword>隆重成立</keyword>
+              <keyword>所有</keyword>
+              <keyword>第三</keyword>
+              <keyword>后二</keyword>
+              <keyword>都想</keyword>
+              <topic>隆重成立</topic>
+            </answer>
+          </option>
+        </answer>
+        <answer name="成立之初">
+          <keyword>前两</keyword>
+          <keyword>所有</keyword>
+          <keyword>前二</keyword>
+          <keyword>第二</keyword>
+          <keyword>都想</keyword>  
+          <keyword>成立之初</keyword>
+          <option type="TF">
+            <question>科大成立的初期，已经具有一定的规模，您想了解科大刚成立时的设置情况吗？</question>
+            <answer name="F">
+              <keyword>不</keyword>
+              <keyword>不想</keyword>
+              <keyword>没兴趣</keyword>
+            </answer>
+            <answer name="T">
+      		  <keyword>好</keyword>
+      	      <keyword>需要</keyword>
+      	      <keyword>了解</keyword>
+      	      <keyword>行</keyword>
+     		  <keyword>可以</keyword>
+      		  <keyword>像</keyword>
+     		  <keyword>随便</keyword>
+              <keyword>想</keyword>
+              <option>
+                <question>关于科大初始设置有以下几个方面内容，玉泉路校址，系科设置，校歌，和首届领导，请问您想了解哪些内容？</question>
+                <answer name="玉泉路校址">
+                  <keyword>玉泉路校址</keyword>
+                  <keyword>第一</keyword>
+                  <keyword>前两</keyword>
+                  <keyword>所有</keyword>
+                  <keyword>前二</keyword>
+                  <keyword>都想</keyword>
+                  <topic>玉泉路校址</topic>
+                </answer>
+                <answer name="系科设置">
+                  <keyword>系科设置</keyword>
+                  <keyword>协力筹建</keyword>
+                  <keyword>前两</keyword>
+                  <keyword>所有</keyword>
+                  <keyword>前二</keyword>
+                  <keyword>第二</keyword>
+                  <keyword>都想</keyword>  
+                  <topic>系科设置</topic>
+                </answer>
+                <answer name="校歌">
+                  <keyword>校歌</keyword>
+                  <keyword>所有</keyword>
+                  <keyword>第三</keyword>
+                  <keyword>后二</keyword>
+                  <keyword>都想</keyword>
+                  <topic>校歌</topic>
+                </answer>
+                <answer name="首届领导">
+                  <keyword>首届领导</keyword>
+                  <keyword>所有</keyword>
+                  <keyword>第四</keyword>
+                  <keyword>后二</keyword>
+                  <keyword>都想</keyword>
+                  <topic>首届领导</topic>
+                </answer>
+              </option>
+            </answer>
+          </option>
+          <option type="TF">
+            <question>科大成立之后，以其鲜明的特色和崭新的风貌引人瞩目，您想了解科大的精神风貌吗？</question>
+            <answer name="F">
+            <keyword>不</keyword>
+      		<keyword>算了</keyword>
+            <keyword>没兴趣</keyword>
+            </answer>
+            <answer name="T">
+          <keyword>想</keyword>
+      		 <keyword>好</keyword>
+     		 <keyword>需要</keyword>
+     		 <keyword>了解</keyword>
+      		 <keyword>行</keyword>
+      	     <keyword>可以</keyword>
+      		 <keyword>像</keyword>
+       		 <keyword>随便</keyword>
+              <option>
+                <question>“春风化雨”讲述了杰出人物对科大的关怀，“优良校风”是科大的始终不渝的传统，这两方面内容您想了解哪个呢？</question>
+                <answer name="春风化雨">
+                  <keyword>春风化雨</keyword>
+                  <keyword>两个都</keyword>
+              	  <keyword>所有</keyword>
+                  <keyword>第一</keyword>
+                  <keyword>都想</keyword>  
+                  <topic>春风化雨</topic>
+                </answer>
+                <answer name="优良校风">
+                  <keyword>优良校风</keyword>
+                  <keyword>两个都</keyword>
+              	  <keyword>所有</keyword>
+              	  <keyword>第二</keyword>
+              	  <keyword>都想</keyword>  
+                  <topic>优良校风</topic>
+                </answer>
+              </option>
+            </answer>
+          </option>
+        </answer>
+        <answer name="南迁重建">
+          <keyword>所有</keyword>
+          <keyword>第三</keyword>
+          <keyword>后二</keyword>
+          <keyword>都想</keyword>
+          <keyword>南迁重建</keyword>
+          <topic>迁址合肥</topic>
+        </answer>
+      </option>
+    </answer>
+  </option>
+  <option type="TF">
+    <question>政府对科大的、关心和支持是科大人难以忘怀的，您想了解政府是如何关心和支持科大的吗？</question>
+    <answer name="F">
+      <keyword>不</keyword>
+      <keyword>算了</keyword>
+      <keyword>没兴趣</keyword>
+    </answer>
+    <answer name="T">
+      <keyword>想</keyword>
+      <keyword>好</keyword>
+      <keyword>需要</keyword>
+      <keyword>了解</keyword>
+      <keyword>行</keyword>
+      <keyword>可以</keyword>
+      <keyword>像</keyword>
+      <keyword>随便</keyword>
+      <option type="TF">
+        <question>正是政府在科大成立之初、给予鼎力支持，科大才得以成立，您想知道科大成立之时政府给予了哪些支持吗？</question>
+        <answer name="F">
+          <keyword>不</keyword>
+          <keyword>算了</keyword>
+          <keyword>没兴趣</keyword>
+        </answer>
+        <answer name="T">
+          <keyword>想</keyword>
+          <keyword>好</keyword>
+      	  <keyword>需要</keyword>
+      	  <keyword>了解</keyword>
+       	  <keyword>行</keyword>
+      	  <keyword>可以</keyword>
+      	  <keyword>像</keyword>
+      	  <keyword>随便</keyword>
+          <topic>酝酿审批</topic>
+          <topic>玉泉路校址</topic>
+          <topic>隆重成立</topic>
+          <topic>首届领导</topic>
+        </answer>
+      </option>
+      <option type="TF">
+        <question>科大成立后，政府对科大更是关心和支持，你想了解相关内容吗？</question>
+        <answer name="F">
+          <keyword>不</keyword>
+          <keyword>算了</keyword>
+          <keyword>没兴趣</keyword>
+        </answer>
+        <answer name="T">
+          <keyword>想</keyword>
+          <keyword>好</keyword>
+      	  <keyword>需要</keyword>
+      	  <keyword>了解</keyword>
+       	  <keyword>行</keyword>
+      	  <keyword>可以</keyword>
+      	  <keyword>像</keyword>
+      	  <keyword>随便</keyword>
+          <topic>中科院支持</topic>
+          <topic>春风化雨</topic>
+          <topic>逆境图存</topic>
+        </answer>
+      </option>
+    </answer>
+  </option>
+</questions>

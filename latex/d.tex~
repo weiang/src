@@ -1,0 +1,8 @@
+\documentclass{article}
+\usepackage{CJK}
+\begin{document}
+ \begin{CJK}{GBK}{song}
+ hehe 中国人
+ \end{CJK}
+
+\end{document}

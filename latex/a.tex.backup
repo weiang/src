@@ -1,0 +1,35 @@
+\documentclass[a4paper,11pt,titlepage]{article}
+\usepackage{graphicx}
+\textwidth=50mm
+\author{weiang}
+\title{HELLO WROLD!}
+\date{ }
+\begin{document}
+\maketitle
+\section{First}
+hehe!!!
+\section{2th}
+\paragraph{H}
+Hello world!!! \\ main test 中国人
+\begin{itemize}
+ \item 1lfsdlth
+ \item 2th
+\end{itemize}
+\begin{enumerate}
+ \item flsjdf
+ \item fks
+\end{enumerate}
+\emph{text here}
+\textbf{hello world}
+\texttt{hehe}
+
+\begin{figure}[hbtp]
+\caption{Figure name}
+\begin{center}
+Latex 教程
+\end{center}
+\label{your-reference-key}
+\end{figure}
+
+``hello''
+\end{document}

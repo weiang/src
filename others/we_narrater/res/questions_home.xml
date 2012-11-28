@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<questions>
+	<option type="TF">
+		<question>你想了解home组实验室吗</question>
+			<answer name="F">
+      				<keyword>不</keyword>
+      				<keyword>算了</keyword>
+    			</answer>
+    			<answer name="T">
+				<keyword>像</keyword>
+				<keyword>向</keyword>
+     		 		<keyword>想</keyword>
+      				<keyword>好</keyword>
+      				<keyword>行</keyword>
+      				<keyword>可以</keyword>
+				<topic>概述</topic>
+				<option>
+					<question>我们实验室有好多家具,分别是书架,小柜子,餐桌,冰箱,你想让我介绍哪几个呢</question>
+						<answer name="书架">
+							<keyword>书架</keyword>
+							<topic>奖杯柜子</topic>
+						</answer>
+						<answer name="小柜子">
+							<keyword>小柜子</keyword>
+							<topic>小柜子</topic>
+						</answer>
+						<answer name="餐桌">
+                                                        <keyword>餐桌</keyword>
+                                                        <topic>餐桌</topic>
+                                                </answer>
+                                                <answer name="冰箱">
+                                                        <keyword>冰箱</keyword>
+                                                        <topic>冰箱</topic>
+                                                </answer>
+						
+				</option>
+				<option type="TF">
+					<question>你想进卧室参观吗</question>
+						<answer name="F">
+							<keyword>不</keyword>
+						</answer>
+						<answer name="T">
+							<keyword>想</keyword>
+							<topic>卧室</topic>
+						</answer>
+				</option>
+			</answer>
+	</option> 	
+</questions>
