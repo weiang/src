@@ -1,0 +1,49 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+OBJ	makefile	/^OBJ = student_info.o median.o grade.o test.o analysis.o$/;"	m
+_ANALYSSI_H_	analysis.h	2;"	d
+_GRADE_H_	grade.h	2;"	d
+_MEDIAN_H_	median.h	2;"	d
+_STUDENT_INFO_H_	student_info.h	2;"	d
+clone	student_info.h	/^	grad* clone() const { return new grad(*this); }$/;"	f	class:grad
+clone	student_info.h	/^	virtual core* clone() const { return new core(*this); }$/;"	f	class:core
+compare	student_info.h	/^		static bool compare(const student_info& a,$/;"	f	class:student_info
+compare_grade	analysis.cpp	/^bool compare_grade(const core& a, const core& b)$/;"	f
+compare_name	analysis.cpp	/^bool compare_name(const core& a, const core& b)$/;"	f
+compare_name_ptr	analysis.cpp	/^bool compare_name_ptr(const core* a, const core* b)$/;"	f
+core	student_info.cpp	/^core::core() : midterm(0), final(0) { }$/;"	f	class:core
+core	student_info.cpp	/^core::core(istream& in) { read(in); }$/;"	f	class:core
+core	student_info.h	/^class core {$/;"	c
+cp	student_info.h	/^		core* cp;$/;"	m	class:student_info
+final	student_info.h	/^	double midterm, final;$/;"	m	class:core
+grad	student_info.cpp	/^grad::grad() : thesis(0) { }$/;"	f	class:grad
+grad	student_info.cpp	/^grad::grad(istream& in) { read(in); }$/;"	f	class:grad
+grad	student_info.h	/^class grad : public core {$/;"	c
+grade	grade.cpp	/^double grade(double midterm, double final, double homework)$/;"	f
+grade	student_info.cpp	/^double core::grade() const$/;"	f	class:core
+grade	student_info.cpp	/^double grad::grade() const$/;"	f	class:grad
+grade	student_info.h	/^		double grade() const $/;"	f	class:student_info
+homework	student_info.h	/^	std::vector<double> homework;$/;"	m	class:core
+main	test.cpp	/^int main(void)$/;"	f
+median	median.cpp	/^double median(std::vector<double> s)$/;"	f
+midterm	student_info.h	/^	double midterm, final;$/;"	m	class:core
+n	student_info.h	/^	std::string n;$/;"	m	class:core
+name	student_info.cpp	/^string core::name() const$/;"	f	class:core
+name	student_info.h	/^		std::string name() const $/;"	f	class:student_info
+operator =	student_info.cpp	/^student_info& student_info::operator=(const student_info& s)$/;"	f	class:student_info
+read	student_info.cpp	/^istream& core::read(istream& in)$/;"	f	class:core
+read	student_info.cpp	/^istream& grad::read(istream& in) $/;"	f	class:grad
+read	student_info.cpp	/^istream& student_info::read(istream& in)$/;"	f	class:student_info
+read_common	student_info.cpp	/^istream& core::read_common(istream& in)$/;"	f	class:core
+read_hw	grade.cpp	/^istream& read_hw(istream& in, vector<double>& s)$/;"	f
+student_info	student_info.cpp	/^student_info::student_info(const student_info& s) : cp(0)$/;"	f	class:student_info
+student_info	student_info.h	/^		student_info() : cp(0) { }$/;"	f	class:student_info
+student_info	student_info.h	/^		student_info(std::istream& in) : cp(0) { read(in); }$/;"	f	class:student_info
+student_info	student_info.h	/^class student_info {$/;"	c
+thesis	student_info.h	/^	double thesis;$/;"	m	class:grad
+~core	student_info.h	/^	virtual ~core() { }$/;"	f	class:core
+~student_info	student_info.h	/^		~student_info() { delete cp; }$/;"	f	class:student_info

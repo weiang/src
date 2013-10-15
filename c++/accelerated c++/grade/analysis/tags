@@ -1,0 +1,32 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+CXX	makefile	/^CXX = g++$/;"	m
+FAIL	extract.h	4;"	d
+_ANALYSE_H_	analysis.h	2;"	d
+_EXTRACT_H_	extract.h	2;"	d
+_GRADE_H_	grade.h	2;"	d
+_MEDIAN_H_	median.h	2;"	d
+_STUDENT_INFO_H_	student_info.h	2;"	d
+compare	grade.cpp	/^bool compare(const student_info& a, const student_info& b)$/;"	f
+did_all_hw	analysis.cpp	/^bool did_all_hw(const student_info& s)$/;"	f
+extract_fail	extract.cpp	/^module extract_fail(module& s)$/;"	f
+final	student_info.h	/^	double midterm, final;$/;"	m	struct:student_info
+grade	grade.cpp	/^double grade(const student_info& s)$/;"	f
+grade	grade.cpp	/^double grade(double	middle, double	final, double average)$/;"	f
+grade	grade.cpp	/^double grade(double middle, double final, const vector<double>& v)$/;"	f
+grade_aux	analysis.cpp	/^double grade_aux(const student_info& s)$/;"	f
+homework	student_info.h	/^	std::vector<double> homework;$/;"	m	struct:student_info
+main	test.cpp	/^int main(void)$/;"	f
+median	median.cpp	/^double	median(vector<double> v)$/;"	f
+median_analysis	analysis.cpp	/^double median_analysis(const module& s)$/;"	f
+midterm	student_info.h	/^	double midterm, final;$/;"	m	struct:student_info
+module	extract.h	/^typedef std::list<student_info>	module;$/;"	t
+name	student_info.h	/^	std::string	name;$/;"	m	struct:student_info
+read	grade.cpp	/^istream& read(istream& in, student_info& s)$/;"	f
+read_hw	grade.cpp	/^istream& read_hw(istream& in, vector<double>& homework)$/;"	f
+student_info	student_info.h	/^struct student_info {$/;"	s
+write_analysis	analysis.cpp	/^void write_analysis(ostream& out, const string s,$/;"	f

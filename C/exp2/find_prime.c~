@@ -1,0 +1,23 @@
+#include <windows.h>
+#include <stdio.h>
+
+DWORD WINAPI find_prime(LPVOID param)
+{
+	DWORD num = *(DWORD *)param;
+
+	if (num == 1) {
+		printf("1 is neither a prime, nor a compesite!\n");
+		return 0;
+	}
+	printf("The prime(<= %d): ", num);
+	for (DWORD i = 2; i <= num; i ++) {
+	       	DWORD flag = 0;
+		for (DWORD j = 2; j * j <= i; j ++) 
+			if (i % j == 0)
+				flag = 1;
+		if (!flag)
+			printf("%d ", i);
+	}
+	printf("\n");
+	return 0;
+}

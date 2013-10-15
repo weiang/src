@@ -1,0 +1,551 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<title>ubuntu下安装texlive 2010步骤和注意事项 - 少帅的天空 - 博客频道 - CSDN.NET</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="description" content="TeX Live 2010 安装步骤（ubuntu 10.10下测试通过）第一步：准备　　我是使用光盘镜像安装TeX Live 2010,所以在安装前需要准备如下材料：　　TeX Live 2010光盘镜像，Windows字体（从Windows 系统拷贝），Adobe字体（网络下载）第二步：开始安装(采用GUI安装方式)&nbsp;&nbsp; &nbsp; 　　首先安装 perl-tk　　　　sudo aptitude install pe">
+<script src="6196129_files/ga.js" async="" type="text/javascript"></script><script src="6196129_files/jquery.js" type="text/javascript"></script>
+<script src="6196129_files/plugins.js" type="text/javascript"></script>
+<script src="6196129_files/common.js" type="text/javascript"></script>
+<script type="text/javascript" src="6196129_files/ad.js"></script>
+<link rel="Stylesheet" type="text/css" href="6196129_files/style.css">
+<link id="RSSLink" title="RSS" type="application/rss+xml" rel="alternate" href="http://blog.csdn.net/ustc_dylan/rss/list">
+<link rel="shortcut icon" href="http://blog.csdn.net/favicon.ico">
+<link type="text/css" rel="stylesheet" href="6196129_files/default.css">
+</head>
+<body>
+<script src="6196129_files/pub_topnav_2011.js" type="text/javascript"></script><link rel="stylesheet" type="text/css" href="6196129_files/navtop_2012.css">
+<div class="nav_top_2011">
+<p><span style="color:red;">您还未登录！</span>|<a href="https://passport.csdn.net/account/login" target="_top">登录</a>|<a href="https://passport.csdn.net/account/register" target="_top">注册</a>|<a href="https://passport.csdn.net/help/faq" target="_blank">帮助</a></p><ul>
+<li><a href="http://www.csdn.net/" target="_blank">首页</a></li>
+<li><a href="http://news.csdn.net/" target="_blank">业界</a></li>
+<li><a href="http://mobile.csdn.net/" target="_blank">移动</a></li>
+<li><a href="http://cloud.csdn.net/" target="_blank">云计算</a></li>
+<li><a href="http://sd.csdn.net/" target="_blank">研发</a></li>
+<li><a href="http://bbs.csdn.net/" target="_blank">论坛</a></li>
+<li><a href="http://blog.csdn.net/" target="_blank">博客</a></li>
+<li><a href="http://download.csdn.net/" target="_blank">下载</a></li>
+<li class="more"><h2 id="topnav_btnmore" onclick="showNavMore(this)"><a href="javascript:void(0);">更多</a></h2>
+<div id="topnav_hidlist">
+<iframe name="nav_frm" src="6196129_files/a.html" frameborder="no" height="178" scrolling="no" width="92"></iframe>
+</div>
+</li>
+</ul>
+</div>
+
+
+<div id="container">
+<div id="header">
+    <div class="header">
+        <div id="blog_title">
+            <h1><a href="http://blog.csdn.net/ustc_dylan">少帅的天空</a></h1>
+            <h2>深入理解linux 深入理解虚拟化</h2>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<div id="navigator">
+    <div class="navigator_bg"></div>
+    <div class="navigator">
+        <ul>
+            <li id="btnContents"><a href="http://blog.csdn.net/ustc_dylan?viewmode=contents"><span><img src="6196129_files/ico_list.gif">目录视图</span></a></li>
+            <li id="btnView"><a href="http://blog.csdn.net/ustc_dylan?viewmode=list"><span><img src="6196129_files/ico_summary.gif">摘要视图</span></a></li>
+            <li id="btnRss"><a href="http://blog.csdn.net/ustc_dylan/rss/list"><span><img src="6196129_files/ico_rss.gif">订阅</span></a></li>
+</ul>
+    </div>
+</div>
+<script type="text/javascript">
+    var username = "ustc_dylan";
+    var blog_address = "http://blog.csdn.net/ustc_dylan";
+    var static_host = "http://static.blog.csdn.net";
+    var currentUserName = "";
+</script>
+        
+<div id="body">
+<div id="main">
+<div class="main">
+<div class="notice"> 
+
+<a href="http://bbs.csdn.net/topics/390268376" target="_blank">
+<font color="red">
+CSDN论坛重写完毕，正式上线！ </font></a>
+
+&nbsp;&nbsp;
+
+
+<a href="http://hbtc2012.hadooper.cn/" target="_blank">
+<font color="red"> Hadoop与大数据精彩议题发布</font></a>
+
+&nbsp;&nbsp;&nbsp;
+
+
+<a href="http://blog.csdn.net/zhangoi391/article/details/8161343" target="_blank">
+<font color="red">2000元大奖征异构开发博文  </font></a>
+
+<br>
+
+
+
+
+
+<a href="http://blog.csdn.net/csdnproduct/article/details/8140597" target="_blank">
+<font color="red">CSDN博客频道搬家功能改版正式上线！ </font></a>
+
+&nbsp;&nbsp;
+
+<a href="http://events.csdn.net/DR2012/roadshow/index.html" target="_blank">
+<font color="red">【免费】解读海外市场营销奥秘   </font></a>
+
+&nbsp;&nbsp;
+
+<a href="http://blog.csdn.net/csdnproduct/article/details/8101993" target="_blank">
+<font color="red">CSDN博客频道推出TAG功能  </font></a>
+
+</div><div id="article_details" class="details">
+    <div class="article_title">
+    <span class="ico ico_type_Original"></span>
+    <h3>
+        <span class="link_title"><a href="http://blog.csdn.net/ustc_dylan/article/details/6196129">
+        ubuntu下安装texlive 2010步骤和注意事项
+        </a></span>
+    </h3>
+</div>
+
+        
+    <div class="article_manage">
+    <span class="link_postdate">2011-02-20 13:53</span>
+    <span class="link_view" title="阅读次数">4713人阅读</span>
+    <span class="link_comments" title="评论次数"><a href="#comments">评论</a>(0)</span>
+    <span class="link_collect"><a href="javascript:void(0);" onclick="javascript:collectArticle('ubuntu下安装texlive 2010步骤和注意事项','6196129');return false;" title="收藏">收藏</a></span>
+    <span class="link_report"><a href="#report" onclick="javascript:report(6196129,2);return false;" title="举报">举报</a></span>
+    
+</div>
+
+
+    
+<div id="article_content" class="article_content">
+<p>
+</p><p><span>TeX Live 2010 安装步骤（ubuntu 10.10下测试通过）</span></p>
+<p><span>　　<strong><span>第一步：准备</span></strong></span></p>
+<p><span>　　我是使用光盘镜像安装TeX Live 2010,所以在安装前需要准备如下材料：</span></p>
+<p><span>　　TeX Live 2010光盘镜像，Windows字体（从Windows 系统拷贝），Adobe字体（网络下载）</span></p>
+<p><span>　　<strong><span>第二步：开始安装(采用GUI安装方式)</span></strong></span></p>
+<p><span>&nbsp;&nbsp; &nbsp; 　　首先安装 perl-tk</span></p>
+<p><span>　　　　sudo aptitude install perl-tk</span></p>
+<p><span>&nbsp;&nbsp; &nbsp; 　　挂载 TeX Live 2010 镜像</span></p>
+<p><span>　　　　sudo mkdir /mnt/iso</span></p>
+<p><span>　　　　sudo mount -o loop texlive2010.iso /mnt/iso</span></p>
+<p><span>　　　　安装</span></p>
+<p><span>　　　　sudo /mnt/iso/install-tl --gui</span></p>
+<p><span><strong><span>　　第三步：安装TeX Live 2010</span></strong></span></p>
+<p><span>　　　　信息读取完毕后，探出一个界面如下：</span></p>
+<p><span>　　　　<img src="6196129_files/2011021521014848.png" alt=""></span></p>
+<p><span>　　　　我把最后一项“自动创建链接”修改外，其他保持原样。点击“安装TeX Live“。</span></p>
+<p><span>　　<strong><span>第四步：配置环境变量</span></strong></span></p>
+<p><span>　　　　我的默认shell 是bash.一次对照安装指南。打开终端，输入：</span></p>
+<p><span>　　　　 vi ~/.profile或者vim /etc/bash.bashrc</span></p>
+<p><span>　　　　然后把以下代码添加进去</span></p>
+<p><span>　　 &nbsp; &nbsp; PATH=/usr/local/texlive/2010/bin/i386‐linux:$PATH; export PATH</span></p>
+<p><span>　　&nbsp;&nbsp; &nbsp; MANPATH=/usr/local/texlive/2010/texmf/doc/man:$MANPATH; export MANPATH</span></p>
+<p><span>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; INFOPATH=/usr/local/texlive/2010/texmf/doc/info:$INFOPATH; export INFOPATH</span></p>
+<p><span>　　　 &nbsp;接着，修改/etc/manpath.config&nbsp;&nbsp; &nbsp;</span></p>
+<p><span>　　　　　sudo &nbsp;vi /etc/manpath.config</span></p>
+<p><span>　　　　在# set up PATH to MANPATH mapping下输入</span></p>
+<p><span><span>　　MANPATH_MAP /usr/local/texlive/2010/bin/i386-linux&nbsp;</span><span>/usr/local/texlive/2010/texmf/doc/man</span></span></p>
+<p><span>　　<strong><span>第五步：配置中文环境和中文字体安装</span></strong></span></p>
+<p><span>　　　　首先:创建Windows字体目录ＷinFonts和Adobe字体目录AdobeFonts</span></p>
+<p><span>　　　　sudo&nbsp;mkdir /usr/share/fonts/WinFonts</span></p>
+<p><span>　　　　sudo mkdir /usr/share/fonts/AdobeFonts</span></p>
+<p><span>&nbsp;&nbsp; &nbsp; &nbsp;　第二 复制上述准备的字体到各自目录</span></p>
+<p><span><span style="color: #800000;">&nbsp;这里需要注意：修改上面拷贝字体的权限&nbsp;</span></span></p>
+<p><span><span style="color: #800000;">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;sudo chmod 644 /usr/share/fonts/WinFonts/*</span></span></p>
+<p><span><span style="color: #800000;">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></span><span>sudo chmod 644 /usr/share/fonts/AdobeFonts/*</span></p>
+<p><span>如果没有这一步，会在编译tex文件时出现下面类似的错误：</span></p>
+<p><span>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span><span style="color: #000080;">&nbsp;&nbsp;SimSun at 17.28pt not loadable&nbsp;&nbsp;</span></span><span>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p><span>　　　　第三 刷新字体缓存</span></p>
+<p><span>　　　　sudo &nbsp;mkfontscale</span></p>
+<p><span>　　　　sudo mkfontdir</span></p>
+<p><span>　　　　sudo fc-cache -fsv</span></p>
+<p><span>　　<strong><span>第六步：安装中文字体后的配置</span></strong></span></p>
+<p><span>　　　　首先，查看系统中安装的中文字体的名字。</span></p>
+<p><span>　　　　fc-list :lang=zh | sort</span></p>
+<p><span>　　　　第二, 查看并根据生成的 fonts 编辑 ctex-xecjk-winfonts.def</span></p>
+<p><span>　　　　sudo &nbsp;vi/usr/local/texlive/2010/texmf-dist/tex/latex/ctex/fontset/ctex-xecjk-winfonts.def。</span></p>
+<p><span>　　　　编辑前ctex-xecjk-winfonts.def如下：</span></p>
+<p><span>　　　　% ctex-xecjk-winfonts.def: Windows 的 xeCJK 字体设置,默认为六种中易字体</span></p>
+<p><span>　　　　%vim:ft=tex/setCJKmainfont[BoldFont={SimHei},ItalicFont={[simkai.ttf]}]&nbsp;&nbsp;</span></p>
+<p><span>　　　　{SimSun}</span></p>
+<p><span>　　　　/setCJKsansfont{SimHei}</span></p>
+<p><span>　　　　/setCJKmonofont{[simfang.ttf]}</span></p>
+<p><span>　　　　/setCJKfamilyfont{zhsong}{SimSun}</span></p>
+<p><span>　　　　/setCJKfamilyfont{zhhei}{SimHei}</span></p>
+<p><span>　　　　/setCJKfamilyfont{zhkai}{[simkai.ttf]}</span></p>
+<p><span>　　　　/setCJKfamilyfont{zhfs}{[simfang.ttf]}</span></p>
+<p><span>　　　　/newcommand*{/songti}{/CJKfamily{zhsong}} % 宋体</span></p>
+<p><span>　　　　/newcommand*{/heiti}{/CJKfamily{zhhei}} &nbsp; % 黑体</span></p>
+<p><span>　　　　/newcommand*{/kaishu}{/CJKfamily{zhkai}} &nbsp;% 楷书</span></p>
+<p><span>　　　　/newcommand*{/fangsong}{/CJKfamily{zhfs}} % 仿宋</span></p>
+<p><span>　　　　/newcommand*{/lishu}{/CJKfamily{zhli}} &nbsp; &nbsp;% 隶书</span></p>
+<p><span>　　　　/newcommand*{/youyuan}{/CJKfamily{zhyou}} % 幼圆</span></p>
+<p><span>　　　　/endinput<br></span></p>
+<p><span>　　　　编辑后 ctex-xecjk-winfonts.def 的内容：</span></p>
+<p><span>　　　　% ctex-xecjk-winfonts.def: Windows 的 xeCJK 字体设置,默认为六种中易字体</span></p>
+<p><span>　　　　% vim:ft=tex</span></p>
+<p><span>　　　　/setCJKmainfont[BoldFont={SimHei},ItalicFont={KaiTi}]&nbsp;&nbsp;{SimSun}</span></p>
+<p><span>　　　　/setCJKsansfont{SimHei}</span></p>
+<p><span>　　　　/setCJKmonofont{FangSong}</span></p>
+<p><span>　　　　/setCJKfamilyfont{zhsong}{SimSun}</span></p>
+<p><span>　　　　/setCJKfamilyfont{zhhei}{SimHei}</span></p>
+<p><span>　　　　/setCJKfamilyfont{zhkai}{KaiTi}</span></p>
+<p><span>　　　　/setCJKfamilyfont{zhfs}{FangSong}</span></p>
+<p><span>　　　　/setCJKfamilyfont{zhli}{LiSu}</span></p>
+<p><span>　　　　/setCJKfamilyfont{zhyou}{YouYuan}</span></p>
+<p><span>　　　　/newcommand*{/songti}{/CJKfamily{zhsong}} % 宋体</span></p>
+<p><span>　　　　/newcommand*{/heiti}{/CJKfamily{zhhei}} &nbsp; % 黑体</span></p>
+<p><span>　　　　/newcommand*{/kaishu}{/CJKfamily{zhkai}} &nbsp;% 楷书</span></p>
+<p><span>　　　　/newcommand*{/fangsong}{/CJKfamily{zhfs}} % 仿宋</span></p>
+<p><span id="aeaoofnhgocdbnbeljkmbjdmhbcokfdb-mousedown">　　　　/newcommand*{/lishu}{/CJKfamily{zhli}} &nbsp; &nbsp;% 隶书</span></p>
+<p><span>　　　　/newcommand*{/youyuan}{/CJKfamily{zhyou}} % 幼圆</span></p>
+<p><span>　　　　/endinput<br></span></p>
+<p><span>　　 &nbsp; &nbsp; &nbsp;第三　同上　查看并根据生成的fonts文件修改ctex-xecjk-adobefonts.def。</span></p>
+<p><span>　　<strong><span>第八步：测试</span></strong></span></p>
+<p><span>　　　　输入一个典型的中文支持例子测试，用xelatex命令编译</span></p>
+<p><span>　　　　/documentclass[UTF8]{ctexart}</span><br><span>　　　　/begin{document}</span><br><span>　　　　这是我的第一个/TeX{}文件</span><br><span>　　　　/end{document}</span></p>
+<div><span><br></span></div>
+<p></p>
+</div>
+<div class="share_buttons" id="sharePanel"><span>分享到：</span> <a name="sina" class="share_sina" title="分享到新浪微博"></a><a name="qq" class="share_qq" title="分享到腾讯微博"></a></div>
+<!--192.168.1.237-->
+<div class="article_next_prev">
+    <li class="prev_article"><span>上一篇：</span><a href="http://blog.csdn.net/ustc_dylan/article/details/6194579">Mercurial - 分布式版本控制系统</a></li>
+    <li class="next_article"><span>下一篇：</span><a href="http://blog.csdn.net/ustc_dylan/article/details/6204369">linux内核主要模块图</a></li>
+</div>
+
+
+    
+</div>
+<div id="ad_cen"><iframe src="6196129_files/ad.html" style="border-width: 0px; overflow: hidden; width: 732px; height: 92px;" id="ad_frm_0" frameborder="0" scrolling="no"></iframe></div>
+<script type="text/javascript">
+    new Ad(4, 'ad_cen');
+</script>
+<div id="comment_title" class="panel_head">查看评论<a name="comments"></a></div>
+<div id="comment_list"><br>&nbsp;&nbsp;暂无评论<br><br><div class="clear"></div></div>
+<div id="comment_bar"></div>
+<div id="comment_form"><div class="guest_link">您还没有登录,请<a href="http://passport.csdn.net/account/login?from=http%3A%2F%2Fblog.csdn.net%2Fustc_dylan%2Farticle%2Fdetails%2F6196129">[登录]</a>或<a href="http://passport.csdn.net/account/register?from=http%3A%2F%2Fblog.csdn.net%2Fustc_dylan%2Farticle%2Fdetails%2F6196129">[注册]</a></div></div>
+<div class="announce">* 以上用户言论只代表其个人观点，不代表CSDN网站的观点或立场<a name="reply"></a><a name="quote"></a></div>
+<script type="text/javascript">
+    var fileName = '6196129';
+    var commentscount = 0;
+    var islock = false
+</script>
+<script type="text/javascript" src="6196129_files/comment.js"></script>
+<div id="ad_bot"><iframe src="6196129_files/ad_002.html" style="border-width: 0px; overflow: hidden; width: 732px; height: 170px;" id="ad_frm_1" frameborder="0" scrolling="no"></iframe></div>
+<script type="text/javascript">
+    new Ad(5, 'ad_bot');
+</script>
+<div id="report_dialog"></div>
+
+<div id="d-top">
+<a href="#" onclick="javascript:document.body.scrollTop=0;document.documentElement.scrollTop=0;this.blur();return false;" title="回到顶部">
+<img src="6196129_files/top.png" alt="TOP"></a>
+</div>
+
+
+
+<div class="clear"></div>
+</div>
+</div>
+
+<div id="side">
+<div class="side">
+<div id="panel_Profile" class="panel">
+    <ul class="panel_head"><span>个人资料</span></ul>
+    <ul class="panel_body profile">
+        <div id="blog_userface">
+            <a href="http://my.csdn.net/ustc_dylan" target="_blank">
+            <img src="6196129_files/1_ustc_dylan.jpg" title="访问我的空间" style="max-width:90%">
+            </a>
+            <br>
+            <span><a href="http://my.csdn.net/ustc_dylan" target="_blank">ustc_dylan</a></span>
+        </div>
+<div class="interact">
+<!--<a href="#" class="attented" title="已关注"></a>-->
+<a href="#" class="attent" id="span_add_follow" title="[加关注]"></a>
+<a href="http://my.csdn.net/my/letter/send/ustc_dylan" class="letter" title="[发私信]"></a>
+</div>
+        <div id="blog_medal">
+        <div id="bms_box"><a href="http://medal.blog.csdn.net/allmedal.aspx" target="_blank"><img src="6196129_files/zhun_s.gif" onmouseover="m_over_m(this,0)" onmouseout="m_out_m()" alt=""></a><a href="http://medal.blog.csdn.net/allmedal.aspx" target="_blank"><img src="6196129_files/holdon_s2.gif" onmouseover="m_over_m(this,1)" onmouseout="m_out_m()" alt=""></a></div></div>
+        <ul id="blog_rank">
+            <li>访问：<span>167569次</span></li>
+            <li>积分：<span>3852分</span></li>
+            <li>排名：<span>第1058名</span></li>
+        </ul>
+        <ul id="blog_statistics">
+            <li>原创：<span>202篇</span></li>
+            <li>转载：<span>62篇</span></li>
+            <li>译文：<span>0篇</span></li>
+            <li>评论：<span>107条</span></li>
+        </ul>
+    </ul>
+</div>
+<script type="text/javascript">
+    var _blogger = 'ustc_dylan';
+</script>
+<script type="text/javascript">
+$(document).ready(function () {
+    var un = getUN().toLowerCase();
+    if (un == _blogger.toLowerCase()) {
+        $('.interact').hide();
+    } else if(un) {
+        var url = "http://my.csdn.net/index.php/follow/check_is_followed/" + encodeURIComponent(un) + "/" + encodeURIComponent(_blogger) + "?jsonpcallback=?";
+        $.getJSON(url, {}, function (data) {
+            if (data.succ == 1 && data.info == 1) {
+                $('#span_add_follow').attr('class', 'attented');
+            } else {
+                $('#span_add_follow').click(guanzhu);
+            }
+        }, 'json');
+    }
+});
+function guanzhu() {
+    var url = "http://my.csdn.net/index.php/follow/do_follow?jsonpcallback=?";
+    $.getJSON(url, { "username": _blogger }, function (data) {
+        if (data.succ == 1) {
+            alert('关注成功！');
+            $('#span_add_follow').attr('class', 'attented').click(function () { return false; });
+        } else {
+            alert(data.msg);
+        }
+    });
+    return false;
+}
+function getUN() {
+    var m = document.cookie.match(new RegExp("(^| )UserName=([^;]*)(;|$)"));
+    if (m) return m[2];
+    else return '';
+}
+</script>
+
+<div class="panel" id="panel_Search">
+    <ul class="panel_head"><span>文章搜索</span></ul>
+    <ul class="panel_body">
+        <form id="frmSearch" action="http://so.csdn.net/search" class="form_search" target="_blank">
+        <span><input id="inputSearch" class="blogsearch" title="请输入关键字" type="text"></span>
+        <input id="btnSubmit" value="搜索" title="search in blog" type="submit">
+        <input name="q" id="inputQ" type="hidden">
+        <input name="t" value="blog" type="hidden">
+        <a id="btnSearchBlog" target="_blank"></a>
+        </form>
+    </ul>
+</div><div id="panel_Category" class="panel">
+    <ul class="panel_head"><span>文章分类</span></ul>
+    <ul class="panel_body">
+        <li>
+        <a href="http://blog.csdn.net/ustc_dylan/article/category/526051">C/C++</a><span>(27)</span>
+        </li>
+        <li>
+        <a href="http://blog.csdn.net/ustc_dylan/article/category/826971">linux</a><span>(27)</span>
+        </li>
+        <li>
+        <a href="http://blog.csdn.net/ustc_dylan/article/category/706707">GUI 图形库</a><span>(1)</span>
+        </li>
+        <li>
+        <a href="http://blog.csdn.net/ustc_dylan/article/category/469214">linux2.6.xx内核代码分析</a><span>(72)</span>
+        </li>
+        <li>
+        <a href="http://blog.csdn.net/ustc_dylan/article/category/471667">linux系统编程</a><span>(20)</span>
+        </li>
+        <li>
+        <a href="http://blog.csdn.net/ustc_dylan/article/category/469216">Qt学习</a><span>(4)</span>
+        </li>
+        <li>
+        <a href="http://blog.csdn.net/ustc_dylan/article/category/469979">学习漫谈</a><span>(47)</span>
+        </li>
+        <li>
+        <a href="http://blog.csdn.net/ustc_dylan/article/category/540965">运维管理</a><span>(4)</span>
+        </li>
+        <li>
+        <a href="http://blog.csdn.net/ustc_dylan/article/category/469217">数据结构学习</a><span>(3)</span>
+        </li>
+        <li>
+        <a href="http://blog.csdn.net/ustc_dylan/article/category/889367">Virtualization &amp;&amp; QEMU</a><span>(17)</span>
+        </li>
+        <li>
+        <a href="http://blog.csdn.net/ustc_dylan/article/category/1172262">并行程序设计</a><span>(0)</span>
+        </li>
+    </ul>
+</div><div id="panel_Archive" class="panel">
+    <ul class="panel_head"><span>文章存档</span></ul>
+    <ul class="panel_body">
+        <div id="archive_list"><li><a href="http://blog.csdn.net/ustc_dylan/article/month/2012/11">2012年11月</a><span>(3)</span></li><li><a href="http://blog.csdn.net/ustc_dylan/article/month/2012/10">2012年10月</a><span>(1)</span></li><li><a href="http://blog.csdn.net/ustc_dylan/article/month/2012/09">2012年09月</a><span>(2)</span></li><li><a href="http://blog.csdn.net/ustc_dylan/article/month/2012/08">2012年08月</a><span>(2)</span></li><li><a href="http://blog.csdn.net/ustc_dylan/article/month/2012/07">2012年07月</a><span>(5)</span></li><span class="hidelist" style="display:none;"><li><a href="http://blog.csdn.net/ustc_dylan/article/month/2012/06">2012年06月</a><span>(4)</span></li><li><a href="http://blog.csdn.net/ustc_dylan/article/month/2012/05">2012年05月</a><span>(4)</span></li><li><a href="http://blog.csdn.net/ustc_dylan/article/month/2012/03">2012年03月</a><span>(5)</span></li><li><a href="http://blog.csdn.net/ustc_dylan/article/month/2012/02">2012年02月</a><span>(4)</span></li><li><a href="http://blog.csdn.net/ustc_dylan/article/month/2011/12">2011年12月</a><span>(4)</span></li><li><a href="http://blog.csdn.net/ustc_dylan/article/month/2011/11">2011年11月</a><span>(10)</span></li><li><a href="http://blog.csdn.net/ustc_dylan/article/month/2011/10">2011年10月</a><span>(10)</span></li><li><a href="http://blog.csdn.net/ustc_dylan/article/month/2011/09">2011年09月</a><span>(4)</span></li><li><a href="http://blog.csdn.net/ustc_dylan/article/month/2011/06">2011年06月</a><span>(4)</span></li><li><a href="http://blog.csdn.net/ustc_dylan/article/month/2011/05">2011年05月</a><span>(3)</span></li><li><a href="http://blog.csdn.net/ustc_dylan/article/month/2011/04">2011年04月</a><span>(7)</span></li><li><a href="http://blog.csdn.net/ustc_dylan/article/month/2011/03">2011年03月</a><span>(3)</span></li><li><a href="http://blog.csdn.net/ustc_dylan/article/month/2011/02">2011年02月</a><span>(6)</span></li><li><a href="http://blog.csdn.net/ustc_dylan/article/month/2011/01">2011年01月</a><span>(8)</span></li><li><a href="http://blog.csdn.net/ustc_dylan/article/month/2010/12">2010年12月</a><span>(7)</span></li><li><a href="http://blog.csdn.net/ustc_dylan/article/month/2010/11">2010年11月</a><span>(5)</span></li><li><a href="http://blog.csdn.net/ustc_dylan/article/month/2010/09">2010年09月</a><span>(1)</span></li><li><a href="http://blog.csdn.net/ustc_dylan/article/month/2010/08">2010年08月</a><span>(8)</span></li><li><a href="http://blog.csdn.net/ustc_dylan/article/month/2010/07">2010年07月</a><span>(4)</span></li><li><a href="http://blog.csdn.net/ustc_dylan/article/month/2010/04">2010年04月</a><span>(1)</span></li><li><a href="http://blog.csdn.net/ustc_dylan/article/month/2010/03">2010年03月</a><span>(23)</span></li><li><a href="http://blog.csdn.net/ustc_dylan/article/month/2010/01">2010年01月</a><span>(1)</span></li><li><a href="http://blog.csdn.net/ustc_dylan/article/month/2009/12">2009年12月</a><span>(21)</span></li><li><a href="http://blog.csdn.net/ustc_dylan/article/month/2009/11">2009年11月</a><span>(11)</span></li><li><a href="http://blog.csdn.net/ustc_dylan/article/month/2009/10">2009年10月</a><span>(1)</span></li><li><a href="http://blog.csdn.net/ustc_dylan/article/month/2009/09">2009年09月</a><span>(2)</span></li><li><a href="http://blog.csdn.net/ustc_dylan/article/month/2009/07">2009年07月</a><span>(7)</span></li><li><a href="http://blog.csdn.net/ustc_dylan/article/month/2009/06">2009年06月</a><span>(8)</span></li><li><a href="http://blog.csdn.net/ustc_dylan/article/month/2009/05">2009年05月</a><span>(11)</span></li><li><a href="http://blog.csdn.net/ustc_dylan/article/month/2009/04">2009年04月</a><span>(26)</span></li><li><a href="http://blog.csdn.net/ustc_dylan/article/month/2009/03">2009年03月</a><span>(23)</span></li><li><a href="http://blog.csdn.net/ustc_dylan/article/month/2008/12">2008年12月</a><span>(3)</span></li><li><a href="http://blog.csdn.net/ustc_dylan/article/month/2008/10">2008年10月</a><span>(12)</span></li></span><div id="archive_list_button" class="list_closed">展开</div></div>
+    </ul>
+</div>
+<div id="hotarticls" class="panel">
+    <ul class="panel_head"><span>阅读排行</span></ul>
+    <ul class="panel_body itemlist">
+        <li>
+            <a href="http://blog.csdn.net/ustc_dylan/article/details/4106436" title="8259A中断控制器详细介绍">8259A中断控制器详细介绍</a><span>(6276)</span>
+        </li>
+        <li>
+            <a href="http://blog.csdn.net/ustc_dylan/article/details/6196129" title="ubuntu下安装texlive 2010步骤和注意事项">ubuntu下安装texlive 2010步骤和注意事项</a><span>(4711)</span>
+        </li>
+        <li>
+            <a href="http://blog.csdn.net/ustc_dylan/article/details/4178381" title="qemu的安装步骤详解(适合ubuntu和windows)">qemu的安装步骤详解(适合ubuntu和windows)</a><span>(3443)</span>
+        </li>
+        <li>
+            <a href="http://blog.csdn.net/ustc_dylan/article/details/5385691" title="KVM虚拟机和QEMU（命令行选项）">KVM虚拟机和QEMU（命令行选项）</a><span>(3271)</span>
+        </li>
+        <li>
+            <a href="http://blog.csdn.net/ustc_dylan/article/details/6877467" title="ubuntu 11.10 Texlive 2011 + Lyx 2.0.1 + Xetex 环境配置">ubuntu 11.10 Texlive 2011 + Lyx 2.0.1 + Xetex 环境配置</a><span>(3060)</span>
+        </li>
+        <li>
+            <a href="http://blog.csdn.net/ustc_dylan/article/details/5998391" title="win7下fedora 14 硬盘或u盘安装指南">win7下fedora 14 硬盘或u盘安装指南</a><span>(2448)</span>
+        </li>
+        <li>
+            <a href="http://blog.csdn.net/ustc_dylan/article/details/4901839" title="用crosstool-ng建立arm-linux 4.3.2 交叉工具链">用crosstool-ng建立arm-linux 4.3.2 交叉工具链</a><span>(2433)</span>
+        </li>
+        <li>
+            <a href="http://blog.csdn.net/ustc_dylan/article/details/4122445" title="linux内核中断 ----- tasklet 分析">linux内核中断 ----- tasklet 分析</a><span>(2328)</span>
+        </li>
+        <li>
+            <a href="http://blog.csdn.net/ustc_dylan/article/details/3985239" title="start_kernel 分析">start_kernel 分析</a><span>(2144)</span>
+        </li>
+        <li>
+            <a href="http://blog.csdn.net/ustc_dylan/article/details/4132046" title=" Linux APIC 详细分析"> Linux APIC 详细分析</a><span>(2109)</span>
+        </li>
+    </ul>
+</div>
+<div id="hotarticls2" class="panel">
+    <ul class="panel_head"><span>评论排行</span></ul>
+    <ul class="panel_body itemlist">
+        <li>
+            <a href="http://blog.csdn.net/ustc_dylan/article/details/4106436" title="8259A中断控制器详细介绍">8259A中断控制器详细介绍</a><span>(12)</span>
+        </li>
+        <li>
+            <a href="http://blog.csdn.net/ustc_dylan/article/details/7079876" title="ubuntu 11.10 安装systemtap">ubuntu 11.10 安装systemtap</a><span>(11)</span>
+        </li>
+        <li>
+            <a href="http://blog.csdn.net/ustc_dylan/article/details/4140245" title="重大更正：CFS调度是没有时间补偿的！">重大更正：CFS调度是没有时间补偿的！</a><span>(11)</span>
+        </li>
+        <li>
+            <a href="http://blog.csdn.net/ustc_dylan/article/details/6857014" title="qemu源码分析之四--dyngen动态翻译技术">qemu源码分析之四--dyngen动态翻译技术</a><span>(6)</span>
+        </li>
+        <li>
+            <a href="http://blog.csdn.net/ustc_dylan/article/details/6877467" title="ubuntu 11.10 Texlive 2011 + Lyx 2.0.1 + Xetex 环境配置">ubuntu 11.10 Texlive 2011 + Lyx 2.0.1 + Xetex 环境配置</a><span>(5)</span>
+        </li>
+        <li>
+            <a href="http://blog.csdn.net/ustc_dylan/article/details/6807731" title="qemu源码分析系列(二)">qemu源码分析系列(二)</a><span>(5)</span>
+        </li>
+        <li>
+            <a href="http://blog.csdn.net/ustc_dylan/article/details/3044252" title="手把手教你把Vim改装成一个IDE编程环境(图文)">手把手教你把Vim改装成一个IDE编程环境(图文)</a><span>(4)</span>
+        </li>
+        <li>
+            <a href="http://blog.csdn.net/ustc_dylan/article/details/3985239" title="start_kernel 分析">start_kernel 分析</a><span>(4)</span>
+        </li>
+        <li>
+            <a href="http://blog.csdn.net/ustc_dylan/article/details/6878000" title="configure: error: GRUB requires a working absolute objcopy; upgrade your binutils 解决方法">configure: error: GRUB requires a working absolute objcopy; upgrade your binutils 解决方法</a><span>(3)</span>
+        </li>
+        <li>
+            <a href="http://blog.csdn.net/ustc_dylan/article/details/6784876" title="QEMU源码分析系列(一）">QEMU源码分析系列(一）</a><span>(3)</span>
+        </li>
+    </ul>
+</div>
+<div id="newcomments" class="panel">
+<ul class="panel_head"><span>最新评论</span></ul>
+<ul class="panel_body itemlist">
+    <li>
+    <a href="http://blog.csdn.net/ustc_dylan/article/details/7079876#comments">ubuntu 11.10 安装systemtap</a>
+    <p style="margin:0px;">beswkwangbo:
+@ustc_dylan:纳尼？？？以前生过？？？师兄毕业了？？？
+    </p>
+    </li>
+    <li>
+    <a href="http://blog.csdn.net/ustc_dylan/article/details/7079876#comments">ubuntu 11.10 安装systemtap</a>
+    <p style="margin:0px;">ustc_dylan:
+@beswkwangbo:二胎？？ 我old了！
+    </p>
+    </li>
+    <li>
+    <a href="http://blog.csdn.net/ustc_dylan/article/details/7079876#comments">ubuntu 11.10 安装systemtap</a>
+    <p style="margin:0px;">beswkwangbo:
+@ustc_dylan:快生了...
+    </p>
+    </li>
+    <li>
+    <a href="http://blog.csdn.net/ustc_dylan/article/details/7079876#comments">ubuntu 11.10 安装systemtap</a>
+    <p style="margin:0px;">ustc_dylan:
+@beswkwangbo:这祝福，？？？！
+    </p>
+    </li>
+    <li>
+    <a href="http://blog.csdn.net/ustc_dylan/article/details/7079876#comments">ubuntu 11.10 安装systemtap</a>
+    <p style="margin:0px;">beswkwangbo:
+@ustc_dylan:是啊，祝母子平安！
+    </p>
+    </li>
+    <li>
+    <a href="http://blog.csdn.net/ustc_dylan/article/details/7079876#comments">ubuntu 11.10 安装systemtap</a>
+    <p style="margin:0px;">ustc_dylan:
+@beswkwangbo:香兰姐吗？
+    </p>
+    </li>
+    <li>
+    <a href="http://blog.csdn.net/ustc_dylan/article/details/7079876#comments">ubuntu 11.10 安装systemtap</a>
+    <p style="margin:0px;">beswkwangbo:
+莫非是陈老师的学生？
+    </p>
+    </li>
+    <li>
+    <a href="http://blog.csdn.net/ustc_dylan/article/details/7079876#comments">ubuntu 11.10 安装systemtap</a>
+    <p style="margin:0px;">beswkwangbo:
+师兄好！
+    </p>
+    </li>
+    <li>
+    <a href="http://blog.csdn.net/ustc_dylan/article/details/7079876#comments">ubuntu 11.10 安装systemtap</a>
+    <p style="margin:0px;">Kelvin17:
+@ustc_dylan:这样。。。呵呵。师兄好！
+    </p>
+    </li>
+    <li>
+    <a href="http://blog.csdn.net/ustc_dylan/article/details/7079876#comments">ubuntu 11.10 安装systemtap</a>
+    <p style="margin:0px;">ustc_dylan:
+@Kelvin17:是的
+    </p>
+    </li>
+</ul>
+</div>
+<div id="custom_column_18430775" class="panel">
+    <ul class="panel_head"><span>友情链接</span></ul>
+    <ul class="panel_body">
+        
+linuxsky.blog.chinaunix.net
+
+    </ul>
+</div></div>
+<div class="clear"></div>
+</div>
+
+<div class="clear"></div>
+</div>
+<script type="text/javascript" src="6196129_files/shCore-src.js"></script>
+<script type="text/javascript" src="6196129_files/ZeroClipboard.js"></script>
+<script type="text/javascript" src="6196129_files/article_code.js"></script>
+
+<script type="text/javascript" src="6196129_files/show.js"></script>
+<script type="text/javascript" src="6196129_files/showblogmedal.js"></script>
+<script type="text/javascript">document.write("<img src=http://counter.csdn.net/pv.aspx?id=24 border=0 width=0 height=0>");</script><img src="6196129_files/pv.asc" border="0" height="0" width="0">
+
+<script type="text/javascript" src="6196129_files/publib_footer.js"></script><link rel="stylesheet" type="text/css" href="6196129_files/pub_footer_2012.css"><div class="pub_footerall"><dl><dt></dt> <dd><a href="http://www.csdn.net/company/about.html" target="_blank">公司简介</a>|<a href="http://www.csdn.net/company/recruit.html" target="_blank">招贤纳士</a>|<a href="http://www.csdn.net/company/marketing.html" target="_blank">广告服务</a>|<a href="http://www.csdn.net/company/account.html" target="_blank">银行汇款帐号</a>|<a href="http://www.csdn.net/company/contact.html" target="_blank">联系方式</a>|<a href="http://www.csdn.net/company/statement.html" target="_blank">版权声明</a>|<a href="http://www.csdn.net/company/layer.html" target="_blank">法律顾问</a>|<a href="mailto:webmaster@csdn.net">问题报告</a></dd><dd>京&nbsp;ICP&nbsp;证&nbsp;070598&nbsp;号</dd><dd>北京创新乐知信息技术有限公司 版权所有</dd><dd><img src="6196129_files/ico_email.gif" alt="" title=""> 联系邮箱：webmaster(at)csdn.net</dd><dd>Copyright © 1999-2012, CSDN.NET, All Rights Reserved&nbsp;<a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=010202001032100010" target="_blank"><img src="6196129_files/gongshang_logos.gif" alt="GongshangLogo" title=""></a></dd></dl></div>
+
+<script type="text/javascript" src="6196129_files/counter.js"></script><script type="text/javascript" charset="UTF-8" src="6196129_files/msg.js"></script>
+
+<!--ad.csdn.net-->
+<script type="text/javascript" src="6196129_files/ad-blog.js"></script><script type="text/javascript" src="6196129_files/ad-ibm414.js"></script>
+
+
+
+
+</div>
+
+</body></html>

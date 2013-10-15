@@ -1,0 +1,21 @@
+/*************************************************************************
+	> File Name: TraceTest.cpp
+	> Author: Weiang
+	> Mail: weiang@mail.ustc.edu.cn 
+	> Created Time: 2013年08月08日 星期四 23时04分40秒
+    > Describition: 
+ ************************************************************************/
+
+#include <iostream>
+#include <fstream>
+#include "Trace.h"
+
+using namespace std;
+
+int main()
+{
+	ifstream f("TraceTest.cpp");
+
+	cout << f.rdbuf() << endl;
+	return 0;
+}
