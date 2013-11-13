@@ -1,0 +1,40 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+AVL_TREE_	AVLtree.h	2;"	d
+AVLtree	AVLtree.h	/^		AVLtree() { }	\/\/ Default constructor$/;"	f	class:AVLtree
+AVLtree	AVLtree.h	/^		AVLtree(const std::vector<Comparable>& rhs) : root(NULL)$/;"	f	class:AVLtree
+AVLtree	AVLtree.h	/^class AVLtree {$/;"	c
+AvlNode	AVLtree.h	/^			AvlNode(Comparable val, AvlNode *left, AvlNode *right, int height = 0) :$/;"	f	struct:AVLtree::AvlNode
+AvlNode	AVLtree.h	/^		typedef struct AvlNode {$/;"	s	class:AVLtree
+AvlNode	AVLtree.h	/^		} AvlNode;$/;"	t	class:AVLtree	typeref:struct:AVLtree::AvlNode
+OBJ	makefile	/^OBJ=test.o$/;"	m
+buildTree	AVLtree.h	/^void AVLtree<Comparable>::buildTree(const std::vector<Comparable>& a)$/;"	f	class:AVLtree
+deleteTree	AVLtree.h	/^void AVLtree<Comparable>::deleteTree(typename AVLtree<Comparable>::AvlNode<Comparable> *root)$/;"	f	class:AVLtree
+doubleRotateWithLeft	AVLtree.h	/^void AVLtree<Comparable>::doubleRotateWithLeft(typename AVLtree<Comparable>::AvlNode * &r)$/;"	f	class:AVLtree
+doubleRotateWithRight	AVLtree.h	/^void AVLtree<Comparable>::doubleRotateWithRight(typename AVLtree<Comparable>::AvlNode * &r)$/;"	f	class:AVLtree
+height	AVLtree.h	/^			int height;$/;"	m	struct:AVLtree::AvlNode
+height	AVLtree.h	/^		int height() const$/;"	f	class:AVLtree
+height	AVLtree.h	/^		int height(AvlNode *node) const$/;"	f	class:AVLtree
+insert	AVLtree.h	/^		void insert(const Comparable& a) $/;"	f	class:AVLtree
+insert	AVLtree.h	/^void AVLtree<Comparable>::insert(typename AVLtree<Comparable>::AvlNode * & root, const Comparable& a)$/;"	f	class:AVLtree
+isContain	AVLtree.h	/^		bool isContain(const Comparable& a)$/;"	f	class:AVLtree
+left	AVLtree.h	/^			AvlNode *left, *right;$/;"	m	struct:AVLtree::AvlNode
+main	test.cc	/^int main(void)$/;"	f
+nsize	AVLtree.h	/^		int nsize;		\/\/ # of AVL tree nodes$/;"	m	class:AVLtree
+remove	AVLtree.h	/^		void remove(const Comparable& a)$/;"	f	class:AVLtree
+remove	AVLtree.h	/^void AVLtree<Comparable>::remove(typename AVLtree<Comparable>::AvlNode * & root, const Comparable& a)$/;"	f	class:AVLtree
+right	AVLtree.h	/^			AvlNode *left, *right;$/;"	m	struct:AVLtree::AvlNode
+root	AVLtree.h	/^		AvlNode *root;	\/\/ The root of AVL tree$/;"	m	class:AVLtree
+rotateWithLeft	AVLtree.h	/^void AVLtree<Comparable>::rotateWithLeft(typename AVLtree<Comparable>::AvlNode * &r)$/;"	f	class:AVLtree
+rotateWithRight	AVLtree.h	/^void AVLtree<Comparable>::rotateWithRight(typename AVLtree<Comparable>::AvlNode * &r)$/;"	f	class:AVLtree
+search	AVLtree.h	/^		AvlNode * & search(const Comparable& a)$/;"	f	class:AVLtree
+search	AVLtree.h	/^typename AVLtree<Comparable>::AvlNode * & AVLtree<Comparable>::search(typename AVLtree<Comparable>::AvlNode *& root, const Comparable& a)$/;"	f	class:AVLtree
+show	AVLtree.h	/^		void show() const$/;"	f	class:AVLtree
+show	AVLtree.h	/^void AVLtree<Comparable>::show(typename AVLtree<Comparable>::AvlNode<Comparable> *root) const$/;"	f	class:AVLtree
+size	AVLtree.h	/^		int size() const$/;"	f	class:AVLtree
+val	AVLtree.h	/^			Comparable val;$/;"	m	struct:AVLtree::AvlNode
+~AVLtree	AVLtree.h	/^		~AVLtree()$/;"	f	class:AVLtree

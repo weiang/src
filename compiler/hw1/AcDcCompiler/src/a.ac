@@ -1,0 +1,6 @@
+i cc
+i name
+cc = 5
+name = 10 + 20 - 5 + cc 
+p cc
+p name

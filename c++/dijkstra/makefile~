@@ -1,0 +1,8 @@
+OBJ=dijk.o priorityQueue.o graph.o main.o
+all: dijk
+
+dijk: 	dijk
+	g++ $(OBJ) -o dijk
+
+clean:
+	rm *.o

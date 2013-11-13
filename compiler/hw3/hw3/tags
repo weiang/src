@@ -1,0 +1,239 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+AAA	sample/decl.c	/^float ABCD, AAA = 4.0, KKK = 5.5;$/;"	v
+ABC	sample/decl.c	/^int ABC;$/;"	v
+ABCD	sample/decl.c	/^float ABCD, AAA = 4.0, KKK = 5.5;$/;"	v
+ARRAY_ID	header.h	/^    ARRAY_ID, \/\/ID_NODE->child = dim$/;"	e	enum:IDENTIFIER_KIND
+ASSIGN_STMT	header.h	/^    ASSIGN_STMT, \/\/TODO:for simpler implementation, assign_expr also uses this$/;"	e	enum:STMT_KIND
+AST_NODE	header.h	/^struct AST_NODE {$/;"	s
+AST_NODE	header.h	/^typedef struct AST_NODE AST_NODE;$/;"	t	typeref:struct:AST_NODE
+AST_TYPE	header.h	/^typedef enum AST_TYPE$/;"	g
+AST_TYPE	header.h	/^} AST_TYPE;$/;"	t	typeref:enum:AST_TYPE
+AST_TYPE_string	functions.c	/^char *AST_TYPE_string[] = {"PROGRAM", "GLOBAL_DECL_LIST", "GLOBAL_DECL", "DECL_LIST", "FUNCTION_DECL", "PARAM_LIST", "PARAM", "DIM_FN", "DIMFN1", "EXPR_NULL", "BLOCK", "DECL", "TYPE_DECL", "VAR_DECL",$/;"	v
+Allocate	alloc.c	/^AST_NODE *Allocate(AST_TYPE type){$/;"	f
+BINARY_OPERATION	header.h	/^    BINARY_OPERATION,$/;"	e	enum:EXPR_KIND
+BINARY_OPERATOR	header.h	/^typedef enum BINARY_OPERATOR$/;"	g
+BINARY_OPERATOR	header.h	/^} BINARY_OPERATOR;$/;"	t	typeref:enum:BINARY_OPERATOR
+BINARY_OP_ADD	header.h	/^    BINARY_OP_ADD,$/;"	e	enum:BINARY_OPERATOR
+BINARY_OP_AND	header.h	/^    BINARY_OP_AND,$/;"	e	enum:BINARY_OPERATOR
+BINARY_OP_DIV	header.h	/^    BINARY_OP_DIV,$/;"	e	enum:BINARY_OPERATOR
+BINARY_OP_EQ	header.h	/^    BINARY_OP_EQ,$/;"	e	enum:BINARY_OPERATOR
+BINARY_OP_GE	header.h	/^    BINARY_OP_GE,$/;"	e	enum:BINARY_OPERATOR
+BINARY_OP_GT	header.h	/^    BINARY_OP_GT,$/;"	e	enum:BINARY_OPERATOR
+BINARY_OP_LE	header.h	/^    BINARY_OP_LE,$/;"	e	enum:BINARY_OPERATOR
+BINARY_OP_LT	header.h	/^    BINARY_OP_LT,$/;"	e	enum:BINARY_OPERATOR
+BINARY_OP_MUL	header.h	/^    BINARY_OP_MUL,$/;"	e	enum:BINARY_OPERATOR
+BINARY_OP_NE	header.h	/^    BINARY_OP_NE,$/;"	e	enum:BINARY_OPERATOR
+BINARY_OP_OR	header.h	/^    BINARY_OP_OR$/;"	e	enum:BINARY_OPERATOR
+BINARY_OP_SUB	header.h	/^    BINARY_OP_SUB,$/;"	e	enum:BINARY_OPERATOR
+BLOCK_NODE	header.h	/^    BLOCK_NODE,$/;"	e	enum:AST_TYPE
+CC	Makefile	/^CC = gcc -g$/;"	m
+CONST	parser.tab.h	/^     CONST = 259,$/;"	e	enum:yytokentype
+CONST_STRING_TYPE	header.h	/^    CONST_STRING_TYPE,\/\/for "const string"$/;"	e	enum:DATA_TYPE
+CONST_VALUE_NODE	header.h	/^    CONST_VALUE_NODE, \/\/ex:1, 2, "constant string"$/;"	e	enum:AST_TYPE
+CON_Type	header.h	/^typedef struct CON_Type{$/;"	s
+CON_Type	header.h	/^} CON_Type;$/;"	t	typeref:struct:CON_Type
+C_type	header.h	/^typedef enum C_type {INTEGERC,FLOATC,STRINGC} C_type;$/;"	g
+C_type	header.h	/^typedef enum C_type {INTEGERC,FLOATC,STRINGC} C_type;$/;"	t	typeref:enum:C_type
+DATA_TYPE	header.h	/^typedef enum DATA_TYPE$/;"	g
+DATA_TYPE	header.h	/^} DATA_TYPE;$/;"	t	typeref:enum:DATA_TYPE
+DECLARATION_NODE	header.h	/^    DECLARATION_NODE,$/;"	e	enum:AST_TYPE
+DECLSemanticValue	header.h	/^typedef struct DECLSemanticValue$/;"	s
+DECLSemanticValue	header.h	/^} DECLSemanticValue;$/;"	t	typeref:struct:DECLSemanticValue
+DECL_KIND	header.h	/^typedef enum DECL_KIND$/;"	g
+DECL_KIND	header.h	/^} DECL_KIND;$/;"	t	typeref:enum:DECL_KIND
+ELSE	parser.tab.h	/^     ELSE = 264,$/;"	e	enum:yytokentype
+ERROR	parser.tab.h	/^     ERROR = 291,$/;"	e	enum:yytokentype
+ERROR_TYPE	header.h	/^    ERROR_TYPE$/;"	e	enum:DATA_TYPE
+EXPRSemanticValue	header.h	/^typedef struct EXPRSemanticValue$/;"	s
+EXPRSemanticValue	header.h	/^} EXPRSemanticValue;$/;"	t	typeref:struct:EXPRSemanticValue
+EXPR_KIND	header.h	/^typedef enum EXPR_KIND$/;"	g
+EXPR_KIND	header.h	/^} EXPR_KIND;$/;"	t	typeref:enum:EXPR_KIND
+EXPR_NODE	header.h	/^    EXPR_NODE,$/;"	e	enum:AST_TYPE
+FLOAT	parser.tab.h	/^     FLOAT = 262,$/;"	e	enum:yytokentype
+FLOATC	header.h	/^typedef enum C_type {INTEGERC,FLOATC,STRINGC} C_type;$/;"	e	enum:C_type
+FLOAT_PTR_TYPE	header.h	/^    FLOAT_PTR_TYPE,\/\/for parameter passing$/;"	e	enum:DATA_TYPE
+FLOAT_TYPE	header.h	/^    FLOAT_TYPE,$/;"	e	enum:DATA_TYPE
+FOR	parser.tab.h	/^     FOR = 266,$/;"	e	enum:yytokentype
+FOR_STMT	header.h	/^    FOR_STMT,$/;"	e	enum:STMT_KIND
+FUNCTION_CALL_STMT	header.h	/^    FUNCTION_CALL_STMT,$/;"	e	enum:STMT_KIND
+FUNCTION_DECL	header.h	/^    FUNCTION_DECL,$/;"	e	enum:DECL_KIND
+FUNCTION_PARAMETER_DECL	header.h	/^    FUNCTION_PARAMETER_DECL$/;"	e	enum:DECL_KIND
+GFLOAT	sample/decl.c	/^typedef float GFLOAT;$/;"	t	file:
+ID	parser.tab.h	/^     ID = 258,$/;"	e	enum:yytokentype
+IDENTIFIER_KIND	header.h	/^typedef enum IDENTIFIER_KIND$/;"	g
+IDENTIFIER_KIND	header.h	/^} IDENTIFIER_KIND;$/;"	t	typeref:enum:IDENTIFIER_KIND
+IDENTIFIER_NODE	header.h	/^    IDENTIFIER_NODE,$/;"	e	enum:AST_TYPE
+IF	parser.tab.h	/^     IF = 263,$/;"	e	enum:yytokentype
+IF_STMT	header.h	/^    IF_STMT,$/;"	e	enum:STMT_KIND
+INT	parser.tab.h	/^     INT = 261,$/;"	e	enum:yytokentype
+INTEGERC	header.h	/^typedef enum C_type {INTEGERC,FLOATC,STRINGC} C_type;$/;"	e	enum:C_type
+INT_PTR_TYPE	header.h	/^    INT_PTR_TYPE,\/\/for parameter passing$/;"	e	enum:DATA_TYPE
+INT_TYPE	header.h	/^    INT_TYPE,$/;"	e	enum:DATA_TYPE
+IdentifierSemanticValue	header.h	/^typedef struct IdentifierSemanticValue$/;"	s
+IdentifierSemanticValue	header.h	/^} IdentifierSemanticValue;$/;"	t	typeref:struct:IdentifierSemanticValue
+KKK	sample/decl.c	/^float ABCD, AAA = 4.0, KKK = 5.5;$/;"	v
+LEX	Makefile	/^LEX = flex$/;"	m
+LIBS	Makefile	/^LIBS = -lfl $/;"	m
+MAX_ARRAY_DIMENSION	header.h	4;"	d
+MK_COMMA	parser.tab.h	/^     MK_COMMA = 288,$/;"	e	enum:yytokentype
+MK_DOT	parser.tab.h	/^     MK_DOT = 290,$/;"	e	enum:yytokentype
+MK_LB	parser.tab.h	/^     MK_LB = 282,$/;"	e	enum:yytokentype
+MK_LBRACE	parser.tab.h	/^     MK_LBRACE = 286,$/;"	e	enum:yytokentype
+MK_LPAREN	parser.tab.h	/^     MK_LPAREN = 284,$/;"	e	enum:yytokentype
+MK_RB	parser.tab.h	/^     MK_RB = 283,$/;"	e	enum:yytokentype
+MK_RBRACE	parser.tab.h	/^     MK_RBRACE = 287,$/;"	e	enum:yytokentype
+MK_RPAREN	parser.tab.h	/^     MK_RPAREN = 285,$/;"	e	enum:yytokentype
+MK_SEMICOLON	parser.tab.h	/^     MK_SEMICOLON = 289,$/;"	e	enum:yytokentype
+NONEMPTY_ASSIGN_EXPR_LIST_NODE	header.h	/^    NONEMPTY_ASSIGN_EXPR_LIST_NODE,$/;"	e	enum:AST_TYPE
+NONEMPTY_RELOP_EXPR_LIST_NODE	header.h	/^    NONEMPTY_RELOP_EXPR_LIST_NODE$/;"	e	enum:AST_TYPE
+NONE_TYPE	header.h	/^    NONE_TYPE,\/\/for nodes like PROGRAM_NODE which has no type$/;"	e	enum:DATA_TYPE
+NORMAL_ID	header.h	/^    NORMAL_ID, \/\/function Name, uninitialized scalar variable$/;"	e	enum:IDENTIFIER_KIND
+NUL_NODE	header.h	/^    NUL_NODE,$/;"	e	enum:AST_TYPE
+OBJECT	Makefile	/^OBJECT = parser.tab.c parser.tab.o lex.yy.c alloc.o functions.o$/;"	m
+OP_AND	parser.tab.h	/^     OP_AND = 270,$/;"	e	enum:yytokentype
+OP_ASSIGN	parser.tab.h	/^     OP_ASSIGN = 268,$/;"	e	enum:yytokentype
+OP_DIVIDE	parser.tab.h	/^     OP_DIVIDE = 281,$/;"	e	enum:yytokentype
+OP_EQ	parser.tab.h	/^     OP_EQ = 272,$/;"	e	enum:yytokentype
+OP_GE	parser.tab.h	/^     OP_GE = 276,$/;"	e	enum:yytokentype
+OP_GT	parser.tab.h	/^     OP_GT = 274,$/;"	e	enum:yytokentype
+OP_LE	parser.tab.h	/^     OP_LE = 277,$/;"	e	enum:yytokentype
+OP_LT	parser.tab.h	/^     OP_LT = 275,$/;"	e	enum:yytokentype
+OP_MINUS	parser.tab.h	/^     OP_MINUS = 279,$/;"	e	enum:yytokentype
+OP_NE	parser.tab.h	/^     OP_NE = 273,$/;"	e	enum:yytokentype
+OP_NOT	parser.tab.h	/^     OP_NOT = 271,$/;"	e	enum:yytokentype
+OP_OR	parser.tab.h	/^     OP_OR = 269,$/;"	e	enum:yytokentype
+OP_PLUS	parser.tab.h	/^     OP_PLUS = 278,$/;"	e	enum:yytokentype
+OP_TIMES	parser.tab.h	/^     OP_TIMES = 280,$/;"	e	enum:yytokentype
+PARAM_LIST_NODE	header.h	/^    PARAM_LIST_NODE,$/;"	e	enum:AST_TYPE
+PROGRAM_NODE	header.h	/^    PROGRAM_NODE,$/;"	e	enum:AST_TYPE
+RETURN	parser.tab.h	/^     RETURN = 292$/;"	e	enum:yytokentype
+RETURN_STMT	header.h	/^    RETURN_STMT,$/;"	e	enum:STMT_KIND
+STMTSemanticValue	header.h	/^typedef struct STMTSemanticValue$/;"	s
+STMTSemanticValue	header.h	/^} STMTSemanticValue;$/;"	t	typeref:struct:STMTSemanticValue
+STMT_KIND	header.h	/^typedef enum STMT_KIND$/;"	g
+STMT_KIND	header.h	/^} STMT_KIND;$/;"	t	typeref:enum:STMT_KIND
+STMT_LIST_NODE	header.h	/^    STMT_LIST_NODE,$/;"	e	enum:AST_TYPE
+STMT_NODE	header.h	/^    STMT_NODE,$/;"	e	enum:AST_TYPE
+STRINGC	header.h	/^typedef enum C_type {INTEGERC,FLOATC,STRINGC} C_type;$/;"	e	enum:C_type
+TARGET	Makefile	/^TARGET = parser$/;"	m
+TYPEDEF	parser.tab.h	/^     TYPEDEF = 267,$/;"	e	enum:yytokentype
+TYPE_DECL	header.h	/^    TYPE_DECL,$/;"	e	enum:DECL_KIND
+TypeSpecSemanticValue	header.h	/^typedef struct TypeSpecSemanticValue$/;"	s
+TypeSpecSemanticValue	header.h	/^} TypeSpecSemanticValue;$/;"	t	typeref:struct:TypeSpecSemanticValue
+UNARY_OPERATION	header.h	/^    UNARY_OPERATION$/;"	e	enum:EXPR_KIND
+UNARY_OPERATOR	header.h	/^typedef enum UNARY_OPERATOR$/;"	g
+UNARY_OPERATOR	header.h	/^} UNARY_OPERATOR;$/;"	t	typeref:enum:UNARY_OPERATOR
+UNARY_OP_LOGICAL_NEGATION	header.h	/^    UNARY_OP_LOGICAL_NEGATION$/;"	e	enum:UNARY_OPERATOR
+UNARY_OP_NEGATIVE	header.h	/^    UNARY_OP_NEGATIVE,$/;"	e	enum:UNARY_OPERATOR
+UNARY_OP_POSITIVE	header.h	/^    UNARY_OP_POSITIVE,$/;"	e	enum:UNARY_OPERATOR
+VARIABLE_DECL	header.h	/^    VARIABLE_DECL,$/;"	e	enum:DECL_KIND
+VARIABLE_DECL_LIST_NODE	header.h	/^    VARIABLE_DECL_LIST_NODE,$/;"	e	enum:AST_TYPE
+VOID	parser.tab.h	/^     VOID = 260,$/;"	e	enum:yytokentype
+VOID_TYPE	header.h	/^    VOID_TYPE,$/;"	e	enum:DATA_TYPE
+WHILE	parser.tab.h	/^     WHILE = 265,$/;"	e	enum:yytokentype
+WHILE_STMT	header.h	/^    WHILE_STMT,$/;"	e	enum:STMT_KIND
+WITH_INIT_ID	header.h	/^    WITH_INIT_ID, \/\/ID_NODE->child = initial value$/;"	e	enum:IDENTIFIER_KIND
+YACC	Makefile	/^YACC = bison -v$/;"	m
+YACCFLAG	Makefile	/^YACCFLAG = -d$/;"	m
+YYSTYPE	parser.tab.h	/^typedef union YYSTYPE$/;"	u
+YYSTYPE	parser.tab.h	/^} YYSTYPE;$/;"	t	typeref:union:YYSTYPE
+YYSTYPE_IS_DECLARED	parser.tab.h	98;"	d
+YYSTYPE_IS_TRIVIAL	parser.tab.h	96;"	d
+YYTOKENTYPE	parser.tab.h	36;"	d
+__HEADER_H__	header.h	2;"	d
+add_op	parser.y	/^add_op		: OP_PLUS$/;"	l
+assign_expr	parser.y	/^assign_expr     : ID OP_ASSIGN relop_expr $/;"	l
+assign_expr_list	parser.y	/^assign_expr_list : nonempty_assign_expr_list $/;"	l
+binaryOp	header.h	/^        BINARY_OPERATOR binaryOp;$/;"	m	union:EXPRSemanticValue::__anon2
+block	parser.y	/^block           : decl_list stmt_list $/;"	l
+cexpr	parser.y	/^cexpr		: cexpr OP_PLUS mcexpr $/;"	l
+cfactor	parser.y	/^cfactor:	CONST $/;"	l
+child	header.h	/^	struct AST_NODE *child;$/;"	m	struct:AST_NODE	typeref:struct:AST_NODE::AST_NODE
+const1	header.h	/^		CON_Type *const1;$/;"	m	union:AST_NODE::__anon4
+const1	parser.tab.h	/^	CON_Type  *const1;$/;"	m	union:YYSTYPE
+constEvalValue	header.h	/^    } constEvalValue;$/;"	m	struct:EXPRSemanticValue	typeref:union:EXPRSemanticValue::__anon1
+const_type	header.h	/^        C_type  const_type;$/;"	m	struct:CON_Type
+const_u	header.h	/^		const_u;$/;"	m	struct:CON_Type	typeref:union:CON_Type::__anon3
+dataType	header.h	/^        DATA_TYPE dataType;$/;"	m	struct:AST_NODE
+decl	parser.y	/^decl		: type_decl $/;"	l
+declSemanticValue	header.h	/^        DECLSemanticValue declSemanticValue;$/;"	m	union:AST_NODE::__anon4
+decl_list	parser.y	/^decl_list	: decl_list decl $/;"	l
+dim_decl	parser.y	/^dim_decl	: MK_LB cexpr MK_RB $/;"	l
+dim_fn	parser.y	/^dim_fn		: MK_LB expr_null MK_RB $/;"	l
+dim_list	parser.y	/^dim_list	: dim_list MK_LB expr MK_RB $/;"	l
+expr	parser.y	/^expr		: expr add_op term $/;"	l
+expr	sample/expr.c	/^int expr(int a, int b, int c, int d,$/;"	f
+exprSemanticValue	header.h	/^        EXPRSemanticValue exprSemanticValue;$/;"	m	union:AST_NODE::__anon4
+expr_null	parser.y	/^expr_null	:expr $/;"	l
+fValue	header.h	/^        float fValue;$/;"	m	union:EXPRSemanticValue::__anon1
+factor	parser.y	/^factor		: MK_LPAREN relop_expr MK_RPAREN$/;"	l
+fn1	sample/expr.c	/^int fn1() {$/;"	f
+fn1	sample/func.c	/^int fn1() {$/;"	f
+fn2	sample/func.c	/^void fn2() {$/;"	f
+fn3	sample/expr.c	/^float fn3() {$/;"	f
+fn3	sample/func.c	/^void fn3(int a, int b[3][4]) {$/;"	f
+fn4	sample/expr.c	/^int fn4(int a, int b) {$/;"	f
+function_decl	parser.y	/^function_decl	: type ID MK_LPAREN param_list MK_RPAREN MK_LBRACE block MK_RBRACE     $/;"	l
+fval	header.h	/^		double  fval;$/;"	m	union:CON_Type::__anon3
+global_decl	parser.y	/^global_decl	: decl_list function_decl$/;"	l
+global_decl_list	parser.y	/^global_decl_list: global_decl_list global_decl $/;"	l
+iValue	header.h	/^        int iValue;$/;"	m	union:EXPRSemanticValue::__anon1
+id_list	parser.y	/^id_list		: ID $/;"	l
+identifierName	header.h	/^    char *identifierName;$/;"	m	struct:IdentifierSemanticValue
+identifierSemanticValue	header.h	/^        IdentifierSemanticValue identifierSemanticValue;$/;"	m	union:AST_NODE::__anon4
+init_id	parser.y	/^init_id		: ID $/;"	l
+init_id_list	parser.y	/^init_id_list	: init_id $/;"	l
+intval	header.h	/^		int     intval;$/;"	m	union:CON_Type::__anon3
+isConstEval	header.h	/^    int isConstEval;$/;"	m	struct:EXPRSemanticValue
+kind	header.h	/^    DECL_KIND kind;$/;"	m	struct:DECLSemanticValue
+kind	header.h	/^    EXPR_KIND kind;$/;"	m	struct:EXPRSemanticValue
+kind	header.h	/^    IDENTIFIER_KIND kind;$/;"	m	struct:IdentifierSemanticValue
+kind	header.h	/^    STMT_KIND kind;$/;"	m	struct:STMTSemanticValue
+leftmostSibling	header.h	/^	struct AST_NODE *leftmostSibling;$/;"	m	struct:AST_NODE	typeref:struct:AST_NODE::AST_NODE
+lexeme	parser.tab.h	/^	char *lexeme;$/;"	m	union:YYSTYPE
+linenumber	header.h	/^	int linenumber;$/;"	m	struct:AST_NODE
+main	sample/control.c	/^int main() {$/;"	f
+main	sample/decl.c	/^int main() {$/;"	f
+main	sample/expr.c	/^int main() {$/;"	f
+main	sample/func.c	/^int main() {$/;"	f
+mcexpr	parser.y	/^mcexpr		: mcexpr OP_TIMES cfactor $/;"	l
+mul_op	parser.y	/^mul_op		: OP_TIMES$/;"	l
+node	parser.tab.h	/^	AST_NODE  *node;$/;"	m	union:YYSTYPE
+nodeType	header.h	/^	AST_TYPE nodeType;$/;"	m	struct:AST_NODE
+nonempty_assign_expr_list	parser.y	/^nonempty_assign_expr_list        : nonempty_assign_expr_list MK_COMMA assign_expr $/;"	l
+nonempty_relop_expr_list	parser.y	/^nonempty_relop_expr_list	: nonempty_relop_expr_list MK_COMMA relop_expr$/;"	l
+op	header.h	/^    } op;$/;"	m	struct:EXPRSemanticValue	typeref:union:EXPRSemanticValue::__anon2
+param	parser.y	/^param		: type ID $/;"	l
+param_list	parser.y	/^param_list	: param_list MK_COMMA  param $/;"	l
+parent	header.h	/^	struct AST_NODE *parent;$/;"	m	struct:AST_NODE	typeref:struct:AST_NODE::AST_NODE
+printGV	functions.c	/^void printGV(AST_NODE *root, char* fileName)$/;"	f
+printGVNode	functions.c	/^int printGVNode(FILE *fp, AST_NODE* node, int count)$/;"	f
+printLabelString	functions.c	/^char *printLabelString(FILE *fp, AST_NODE *astNode)$/;"	f
+program	parser.y	/^program		: global_decl_list { $$=Allocate(PROGRAM_NODE);  makeChild($$,$1); prog=$$;}$/;"	l
+rel_op	parser.y	/^rel_op		: OP_EQ$/;"	l
+relop_expr	parser.y	/^relop_expr	: relop_term $/;"	l
+relop_expr_list	parser.y	/^relop_expr_list	: nonempty_relop_expr_list $/;"	l
+relop_factor	parser.y	/^relop_factor	: expr$/;"	l
+relop_term	parser.y	/^relop_term	: relop_factor $/;"	l
+rightSibling	header.h	/^	struct AST_NODE *rightSibling;$/;"	m	struct:AST_NODE	typeref:struct:AST_NODE::AST_NODE
+sc	header.h	/^		char    *sc; }$/;"	m	union:CON_Type::__anon3
+semantic_value	header.h	/^	} semantic_value;$/;"	m	struct:AST_NODE	typeref:union:AST_NODE::__anon4
+stmt	parser.y	/^stmt		: MK_LBRACE block MK_RBRACE $/;"	l
+stmtSemanticValue	header.h	/^        STMTSemanticValue stmtSemanticValue;$/;"	m	union:AST_NODE::__anon4
+stmt_list	parser.y	/^stmt_list	: stmt_list stmt $/;"	l
+symbolTableEntry	header.h	/^    struct SymbolTableEntry *symbolTableEntry;$/;"	m	struct:IdentifierSemanticValue	typeref:struct:IdentifierSemanticValue::SymbolTableEntry
+term	parser.y	/^term		: term mul_op factor$/;"	l
+test	parser.y	/^test		: assign_expr$/;"	l
+type	parser.y	/^type		: INT $/;"	l
+typeName	header.h	/^    char *typeName;$/;"	m	struct:TypeSpecSemanticValue
+type_decl	parser.y	/^type_decl 	: TYPEDEF type id_list MK_SEMICOLON  $/;"	l
+unaryOp	header.h	/^        UNARY_OPERATOR unaryOp;$/;"	m	union:EXPRSemanticValue::__anon2
+var_decl	parser.y	/^var_decl	: type init_id_list MK_SEMICOLON $/;"	l
+var_ref	parser.y	/^var_ref		: ID $/;"	l
+yystype	parser.tab.h	97;"	d
+yytokentype	parser.tab.h	/^   enum yytokentype {$/;"	g

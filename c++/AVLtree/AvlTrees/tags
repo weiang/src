@@ -1,0 +1,84 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+AVL_H	Avl.h	3;"	d
+AvlNode	Avl.cc	/^AvlNode<KeyType>::AvlNode(Comparable<KeyType> * item)$/;"	f	class:AvlNode
+AvlNode	Avl.h	/^class AvlNode {$/;"	c
+AvlTree	Avl.h	/^   AvlTree() : myRoot(NULL) {};$/;"	f	class:AvlTree
+AvlTree	Avl.h	/^class AvlTree {$/;"	c
+BALANCED	Avl.cc	/^enum balance_t { LEFT_HEAVY = -1, BALANCED = 0, RIGHT_HEAVY = 1 };$/;"	e	enum:balance_t	file:
+Bal	Avl.h	/^   Bal(void) const { return  myBal; }$/;"	f	class:AvlNode
+CC	Makefile	/^CC = g++$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -g$/;"	m
+COMPARABLE_H	Comparable.h	3;"	d
+Check	Avl.cc	/^AvlNode<KeyType>::Check() const {$/;"	f	class:AvlNode
+Check	Avl.h	/^   Check() const {$/;"	f	class:AvlTree
+Comparable	Comparable.h	/^   Comparable(KeyType  key) : myKey(key) {};$/;"	f	class:Comparable
+Comparable	Comparable.h	/^class Comparable {$/;"	c
+Compare	Avl.cc	/^AvlNode<KeyType>::Compare(KeyType key, cmp_t cmp) const$/;"	f	class:AvlNode
+Compare	Comparable.h	/^   cmp_t Compare(KeyType  key) const {$/;"	f	class:Comparable
+Data	Avl.h	/^   Data() const { return  myData; }$/;"	f	class:AvlNode
+DelVals	TestVals.h	/^long DelVals[] = {$/;"	v
+Delete	Avl.cc	/^AvlNode<KeyType>::Delete(KeyType              key,$/;"	f	class:AvlNode
+Delete	Avl.cc	/^AvlNode<KeyType>::Delete(KeyType key, AvlNode<KeyType> * & root, cmp_t cmp)$/;"	f	class:AvlNode
+Delete	Avl.h	/^   Delete(KeyType key, cmp_t cmp=EQ_CMP) {$/;"	f	class:AvlTree
+Dump	Avl.cc	/^Dump(ostream & os, const AvlNode<KeyType> * node, int level=0)$/;"	f	file:
+Dump	Avl.cc	/^Dump(ostream & os,$/;"	f	file:
+DumpTree	Avl.cc	/^AvlTree<KeyType>::DumpTree(ostream & os) const {$/;"	f	class:AvlTree
+EQ_CMP	Comparable.h	/^   EQ_CMP  = 0,    \/\/ equal to$/;"	e	enum:cmp_t
+HEIGHT_CHANGE	Avl.cc	/^enum height_effect_t { HEIGHT_NOCHANGE = 0, HEIGHT_CHANGE = 1 };$/;"	e	enum:height_effect_t	file:
+HEIGHT_NOCHANGE	Avl.cc	/^enum height_effect_t { HEIGHT_NOCHANGE = 0, HEIGHT_CHANGE = 1 };$/;"	e	enum:height_effect_t	file:
+Height	Avl.cc	/^AvlNode<KeyType>::Height() const {$/;"	f	class:AvlNode
+Indent	Avl.cc	/^Indent(ostream & os, int len) {$/;"	f	file:
+Insert	Avl.cc	/^AvlNode<KeyType>::Insert(Comparable<KeyType> *   item,$/;"	f	class:AvlNode
+Insert	Avl.h	/^   Insert(Comparable<KeyType> * item) {$/;"	f	class:AvlTree
+IsEmpty	Avl.h	/^   IsEmpty() const {$/;"	f	class:AvlTree
+KEY	Avl.cc	/^enum TraversalOrder { LTREE, KEY, RTREE };$/;"	e	enum:TraversalOrder	file:
+Key	Avl.h	/^   Key() const { return  myData->Key(); }$/;"	f	class:AvlNode
+Key	Comparable.h	/^   KeyType Key() const { return  myKey; }$/;"	f	class:Comparable
+LEFT	Avl.h	/^enum  dir_t { LEFT = 0, RIGHT = 1 };$/;"	e	enum:dir_t
+LEFT_HEAVY	Avl.cc	/^enum balance_t { LEFT_HEAVY = -1, BALANCED = 0, RIGHT_HEAVY = 1 };$/;"	e	enum:balance_t	file:
+LEFT_IMBALANCE	Avl.cc	/^LEFT_IMBALANCE(short bal) {$/;"	f	file:
+LTREE	Avl.cc	/^enum TraversalOrder { LTREE, KEY, RTREE };$/;"	e	enum:TraversalOrder	file:
+MAX	Avl.cc	/^MAX(int a, int b) {$/;"	f	file:
+MAX_CMP	Comparable.h	/^   MAX_CMP = 1     \/\/ greater than$/;"	e	enum:cmp_t
+MAX_SUBTREES	Avl.h	/^   enum  { MAX_SUBTREES = 2 };$/;"	e	enum:AvlNode::__anon1
+MIN	Avl.cc	/^MIN(int a, int b) {$/;"	f	file:
+MIN_CMP	Comparable.h	/^   MIN_CMP = -1,   \/\/ less than$/;"	e	enum:cmp_t
+NUM_ELEMENTS	TestVals.h	1014;"	d
+OBJS	Makefile	/^OBJS   = ${TREE}.o$/;"	m
+Opposite	Avl.h	/^   Opposite(dir_t dir) { $/;"	f	class:AvlNode
+Print	Comparable.h	/^   Print(ostream & os) const { $/;"	f	class:Comparable
+RIGHT	Avl.h	/^enum  dir_t { LEFT = 0, RIGHT = 1 };$/;"	e	enum:dir_t
+RIGHT_HEAVY	Avl.cc	/^enum balance_t { LEFT_HEAVY = -1, BALANCED = 0, RIGHT_HEAVY = 1 };$/;"	e	enum:balance_t	file:
+RIGHT_IMBALANCE	Avl.cc	/^RIGHT_IMBALANCE(short bal) {$/;"	f	file:
+RTREE	Avl.cc	/^enum TraversalOrder { LTREE, KEY, RTREE };$/;"	e	enum:TraversalOrder	file:
+ReBalance	Avl.cc	/^AvlNode<KeyType>::ReBalance(AvlNode<KeyType> * & root) {$/;"	f	class:AvlNode
+Reset	Avl.h	/^   Reset(void) {$/;"	f	class:AvlNode
+RotateOnce	Avl.cc	/^AvlNode<KeyType>::RotateOnce(AvlNode<KeyType> * & root, dir_t dir)$/;"	f	class:AvlNode
+RotateTwice	Avl.cc	/^AvlNode<KeyType>::RotateTwice(AvlNode<KeyType> * & root, dir_t dir)$/;"	f	class:AvlNode
+Search	Avl.cc	/^AvlNode<KeyType>::Search(KeyType key, AvlNode<KeyType> * root, cmp_t cmp)$/;"	f	class:AvlNode
+Search	Avl.h	/^   Search(KeyType key, cmp_t cmp=EQ_CMP) {$/;"	f	class:AvlTree
+Subtree	Avl.h	/^   Subtree(dir_t dir) const { return  mySubtree[dir]; }$/;"	f	class:AvlNode
+TEST	Makefile	/^TEST   = ${TREE}Test$/;"	m
+TESTVALS_H	TestVals.h	3;"	d
+TREE	Makefile	/^TREE   = Avl$/;"	m
+TestVals	TestVals.h	/^static Comparable<long> TestVals[] = {$/;"	v
+TraversalOrder	Avl.cc	/^enum TraversalOrder { LTREE, KEY, RTREE };$/;"	g	file:
+VerifyTree	AvlTest.cc	/^void VerifyTree(AvlTree<long> & tree) {$/;"	f
+balance_t	Avl.cc	/^enum balance_t { LEFT_HEAVY = -1, BALANCED = 0, RIGHT_HEAVY = 1 };$/;"	g	file:
+cmp_t	Comparable.h	/^enum  cmp_t {$/;"	g
+dir_t	Avl.h	/^enum  dir_t { LEFT = 0, RIGHT = 1 };$/;"	g
+height_effect_t	Avl.cc	/^enum height_effect_t { HEIGHT_NOCHANGE = 0, HEIGHT_CHANGE = 1 };$/;"	g	file:
+main	AvlTest.cc	/^main()$/;"	f
+myBal	Avl.h	/^   short      myBal;   \/\/ Balance factor$/;"	m	class:AvlNode
+myData	Avl.h	/^   Comparable<KeyType> * myData;  \/\/ Data field$/;"	m	class:AvlNode
+myKey	Comparable.h	/^   KeyType  myKey;$/;"	m	class:Comparable
+myRoot	Avl.h	/^   AvlNode<KeyType> * myRoot;   \/\/ The root of the tree$/;"	m	class:AvlTree
+mySubtree	Avl.h	/^   AvlNode<KeyType>    * mySubtree[MAX_SUBTREES];   \/\/ Pointers to subtrees$/;"	m	class:AvlNode
+operator <<	Comparable.h	/^inline ostream & operator<<(ostream & os, Comparable<KeyType> item) {$/;"	f
+~AvlNode	Avl.cc	/^AvlNode<KeyType>::~AvlNode(void) {$/;"	f	class:AvlNode
+~AvlTree	Avl.h	/^   ~AvlTree() { if (myRoot)  delete myRoot; }$/;"	f	class:AvlTree

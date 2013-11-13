@@ -1,0 +1,135 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+Alphabet	header.h	/^             MulOp, DivOp, Alphabet, IntValue, FloatValue, EOFsymbol } TokenType;$/;"	e	enum:TokenType
+Assign	header.h	/^typedef enum Operation { Plus, Minus, Mul, Div, Assign, IntToFloatConvert } Operation;$/;"	e	enum:Operation
+Assignment	header.h	/^typedef enum StmtType { Print, Assignment } StmtType;$/;"	e	enum:StmtType
+AssignmentOp	header.h	/^typedef enum TokenType { FloatDeclaration, IntegerDeclaration, PrintOp, AssignmentOp, PlusOp, MinusOp,$/;"	e	enum:TokenType
+AssignmentStatement	header.h	/^typedef struct AssignmentStatement{$/;"	s
+AssignmentStatement	header.h	/^}AssignmentStatement;$/;"	t	typeref:struct:AssignmentStatement
+DataType	header.h	/^typedef enum DataType { Int, Float, Notype }DataType;$/;"	g
+DataType	header.h	/^typedef enum DataType { Int, Float, Notype }DataType;$/;"	t	typeref:enum:DataType
+Declaration	header.h	/^typedef struct Declaration{$/;"	s
+Declaration	header.h	/^}Declaration;$/;"	t	typeref:struct:Declaration
+Declarations	header.h	/^typedef struct Declarations{$/;"	s
+Declarations	header.h	/^}Declarations;$/;"	t	typeref:struct:Declarations
+Div	header.h	/^typedef enum Operation { Plus, Minus, Mul, Div, Assign, IntToFloatConvert } Operation;$/;"	e	enum:Operation
+DivNode	header.h	/^typedef enum ValueType { Identifier, IntConst, FloatConst, PlusNode, MinusNode, MulNode, DivNode, IntToFloatConvertNode } ValueType;$/;"	e	enum:ValueType
+DivOp	header.h	/^             MulOp, DivOp, Alphabet, IntValue, FloatValue, EOFsymbol } TokenType;$/;"	e	enum:TokenType
+EOFsymbol	header.h	/^             MulOp, DivOp, Alphabet, IntValue, FloatValue, EOFsymbol } TokenType;$/;"	e	enum:TokenType
+Expression	header.h	/^typedef struct Expression{$/;"	s
+Expression	header.h	/^}Expression;$/;"	t	typeref:struct:Expression
+Float	header.h	/^typedef enum DataType { Int, Float, Notype }DataType;$/;"	e	enum:DataType
+FloatConst	header.h	/^typedef enum ValueType { Identifier, IntConst, FloatConst, PlusNode, MinusNode, MulNode, DivNode, IntToFloatConvertNode } ValueType;$/;"	e	enum:ValueType
+FloatDeclaration	header.h	/^typedef enum TokenType { FloatDeclaration, IntegerDeclaration, PrintOp, AssignmentOp, PlusOp, MinusOp,$/;"	e	enum:TokenType
+FloatValue	header.h	/^             MulOp, DivOp, Alphabet, IntValue, FloatValue, EOFsymbol } TokenType;$/;"	e	enum:TokenType
+HEADER_H_INCLUDED	header.h	2;"	d
+ID_MAX_SIZE	header.h	16;"	d
+Identifier	header.h	/^typedef enum ValueType { Identifier, IntConst, FloatConst, PlusNode, MinusNode, MulNode, DivNode, IntToFloatConvertNode } ValueType;$/;"	e	enum:ValueType
+InitializeTable	AcDc.c	/^void InitializeTable( SymbolTable *table )$/;"	f
+Int	header.h	/^typedef enum DataType { Int, Float, Notype }DataType;$/;"	e	enum:DataType
+IntConst	header.h	/^typedef enum ValueType { Identifier, IntConst, FloatConst, PlusNode, MinusNode, MulNode, DivNode, IntToFloatConvertNode } ValueType;$/;"	e	enum:ValueType
+IntToFloatConvert	header.h	/^typedef enum Operation { Plus, Minus, Mul, Div, Assign, IntToFloatConvert } Operation;$/;"	e	enum:Operation
+IntToFloatConvertNode	header.h	/^typedef enum ValueType { Identifier, IntConst, FloatConst, PlusNode, MinusNode, MulNode, DivNode, IntToFloatConvertNode } ValueType;$/;"	e	enum:ValueType
+IntValue	header.h	/^             MulOp, DivOp, Alphabet, IntValue, FloatValue, EOFsymbol } TokenType;$/;"	e	enum:TokenType
+IntegerDeclaration	header.h	/^typedef enum TokenType { FloatDeclaration, IntegerDeclaration, PrintOp, AssignmentOp, PlusOp, MinusOp,$/;"	e	enum:TokenType
+Minus	header.h	/^typedef enum Operation { Plus, Minus, Mul, Div, Assign, IntToFloatConvert } Operation;$/;"	e	enum:Operation
+MinusNode	header.h	/^typedef enum ValueType { Identifier, IntConst, FloatConst, PlusNode, MinusNode, MulNode, DivNode, IntToFloatConvertNode } ValueType;$/;"	e	enum:ValueType
+MinusOp	header.h	/^typedef enum TokenType { FloatDeclaration, IntegerDeclaration, PrintOp, AssignmentOp, PlusOp, MinusOp,$/;"	e	enum:TokenType
+Mul	header.h	/^typedef enum Operation { Plus, Minus, Mul, Div, Assign, IntToFloatConvert } Operation;$/;"	e	enum:Operation
+MulNode	header.h	/^typedef enum ValueType { Identifier, IntConst, FloatConst, PlusNode, MinusNode, MulNode, DivNode, IntToFloatConvertNode } ValueType;$/;"	e	enum:ValueType
+MulOp	header.h	/^             MulOp, DivOp, Alphabet, IntValue, FloatValue, EOFsymbol } TokenType;$/;"	e	enum:TokenType
+Notype	header.h	/^typedef enum DataType { Int, Float, Notype }DataType;$/;"	e	enum:DataType
+Operation	header.h	/^typedef enum Operation { Plus, Minus, Mul, Div, Assign, IntToFloatConvert } Operation;$/;"	g
+Operation	header.h	/^typedef enum Operation { Plus, Minus, Mul, Div, Assign, IntToFloatConvert } Operation;$/;"	t	typeref:enum:Operation
+Plus	header.h	/^typedef enum Operation { Plus, Minus, Mul, Div, Assign, IntToFloatConvert } Operation;$/;"	e	enum:Operation
+PlusNode	header.h	/^typedef enum ValueType { Identifier, IntConst, FloatConst, PlusNode, MinusNode, MulNode, DivNode, IntToFloatConvertNode } ValueType;$/;"	e	enum:ValueType
+PlusOp	header.h	/^typedef enum TokenType { FloatDeclaration, IntegerDeclaration, PrintOp, AssignmentOp, PlusOp, MinusOp,$/;"	e	enum:TokenType
+Print	header.h	/^typedef enum StmtType { Print, Assignment } StmtType;$/;"	e	enum:StmtType
+PrintOp	header.h	/^typedef enum TokenType { FloatDeclaration, IntegerDeclaration, PrintOp, AssignmentOp, PlusOp, MinusOp,$/;"	e	enum:TokenType
+Program	header.h	/^typedef struct Program{$/;"	s
+Program	header.h	/^}Program;$/;"	t	typeref:struct:Program
+Statement	header.h	/^typedef struct Statement{$/;"	s
+Statement	header.h	/^}Statement;$/;"	t	typeref:struct:Statement
+Statements	header.h	/^typedef struct Statements{$/;"	s
+Statements	header.h	/^}Statements;$/;"	t	typeref:struct:Statements
+StmtType	header.h	/^typedef enum StmtType { Print, Assignment } StmtType;$/;"	g
+StmtType	header.h	/^typedef enum StmtType { Print, Assignment } StmtType;$/;"	t	typeref:enum:StmtType
+SymbolTable	header.h	/^typedef struct SymbolTable {$/;"	s
+SymbolTable	header.h	/^} SymbolTable;$/;"	t	typeref:struct:SymbolTable
+SymbolTableEntry	header.h	/^typedef struct SymbolTableEntry {$/;"	s
+SymbolTableEntry	header.h	/^} SymbolTableEntry;$/;"	t	typeref:struct:SymbolTableEntry
+Token	header.h	/^typedef struct Token{$/;"	s
+Token	header.h	/^}Token;$/;"	t	typeref:struct:Token
+TokenType	header.h	/^             MulOp, DivOp, Alphabet, IntValue, FloatValue, EOFsymbol } TokenType;$/;"	t	typeref:enum:TokenType
+TokenType	header.h	/^typedef enum TokenType { FloatDeclaration, IntegerDeclaration, PrintOp, AssignmentOp, PlusOp, MinusOp,$/;"	g
+Value	header.h	/^typedef struct Value{$/;"	s
+Value	header.h	/^}Value;$/;"	t	typeref:struct:Value
+ValueType	header.h	/^typedef enum ValueType { Identifier, IntConst, FloatConst, PlusNode, MinusNode, MulNode, DivNode, IntToFloatConvertNode } ValueType;$/;"	g
+ValueType	header.h	/^typedef enum ValueType { Identifier, IntConst, FloatConst, PlusNode, MinusNode, MulNode, DivNode, IntToFloatConvertNode } ValueType;$/;"	t	typeref:enum:ValueType
+add_table	AcDc.c	/^void add_table(SymbolTable *table, char *c, DataType t)$/;"	f
+assign	header.h	/^		AssignmentStatement assign;$/;"	m	union:Statement::__anon2
+build	AcDc.c	/^SymbolTable build( Program program )$/;"	f
+check	AcDc.c	/^void check( Program *program, SymbolTable * table )$/;"	f
+checkexpression	AcDc.c	/^void checkexpression( Expression * expr, SymbolTable * table )$/;"	f
+checkstmt	AcDc.c	/^void checkstmt( Statement *stmt, SymbolTable * table )$/;"	f
+convertType	AcDc.c	/^void convertType( Expression * old, DataType type )$/;"	f
+declarations	header.h	/^    Declarations *declarations;$/;"	m	struct:Program
+entry	header.h	/^	SymbolTableEntry entry[26];$/;"	m	struct:SymbolTable
+expr	header.h	/^	Expression *expr;$/;"	m	struct:AssignmentStatement
+first	header.h	/^    Declaration first;$/;"	m	struct:Declarations
+first	header.h	/^    struct Statement first;$/;"	m	struct:Statements	typeref:struct:Statements::Statement
+fprint_expr	AcDc.c	/^void fprint_expr(FILE *target, Expression *expr, SymbolTable *table)$/;"	f
+fprint_op	AcDc.c	/^void fprint_op( FILE *target, ValueType op )$/;"	f
+fvalue	header.h	/^        float fvalue;              \/* for float constant *\/$/;"	m	union:Value::__anon1
+gencode	AcDc.c	/^void gencode(Program prog, FILE *target, SymbolTable *table)$/;"	f
+generalize	AcDc.c	/^DataType generalize( Expression *left, Expression *right )$/;"	f
+getNumericToken	AcDc.c	/^Token getNumericToken( FILE *source, char c )$/;"	f
+id	header.h	/^		char id[ID_MAX_SIZE];$/;"	m	union:Value::__anon1
+id	header.h	/^    char id[ID_MAX_SIZE];$/;"	m	struct:AssignmentStatement
+identifier_index_in_table	AcDc.c	/^int identifier_index_in_table(char *id, SymbolTable *table)$/;"	f
+ivalue	header.h	/^        int ivalue;                \/* for integer constant in the expression *\/$/;"	m	union:Value::__anon1
+leftOperand	header.h	/^    struct Expression *leftOperand;$/;"	m	struct:Expression	typeref:struct:Expression::Expression
+lookup_table	AcDc.c	/^DataType lookup_table(SymbolTable *table, char *c)$/;"	f
+main	AcDc.c	/^int main( int argc, char *argv[] )$/;"	f
+main	a.c	/^int main()$/;"	f
+makeAssignmentNode	AcDc.c	/^Statement makeAssignmentNode(char *id, Expression *v, Expression *expr_tail)$/;"	f
+makeDeclarationNode	AcDc.c	/^Declaration makeDeclarationNode( Token declare_type, Token identifier )$/;"	f
+makeDeclarationTree	AcDc.c	/^Declarations *makeDeclarationTree( Declaration decl, Declarations *decls )$/;"	f
+makePrintNode	AcDc.c	/^Statement makePrintNode(char *id)$/;"	f
+makeStatementTree	AcDc.c	/^Statements *makeStatementTree( Statement stmt, Statements *stmts )$/;"	f
+name	header.h	/^	char name[ID_MAX_SIZE];$/;"	m	struct:Declaration
+name	header.h	/^	char name[ID_MAX_SIZE];$/;"	m	struct:SymbolTableEntry
+op	header.h	/^        Operation op;              \/* store +, -, *, \/, =, type_convert *\/$/;"	m	union:Value::__anon1
+parseDeclaration	AcDc.c	/^Declaration parseDeclaration( FILE *source, Token token )$/;"	f
+parseDeclarations	AcDc.c	/^Declarations *parseDeclarations( FILE *source )$/;"	f
+parseExpression	AcDc.c	/^Expression *parseExpression( FILE *source, Expression *lvalue )$/;"	f
+parseExpressionTail	AcDc.c	/^Expression *parseExpressionTail( FILE *source, Expression *lvalue )$/;"	f
+parseStatement	AcDc.c	/^Statement parseStatement( FILE *source, Token token )$/;"	f
+parseStatements	AcDc.c	/^Statements *parseStatements( FILE * source )$/;"	f
+parseTerm	AcDc.c	/^Expression *parseTerm(FILE *source, Expression *lvalue)$/;"	f
+parseTermTail	AcDc.c	/^Expression *parseTermTail(FILE * sourcer, Expression *lvalue)$/;"	f
+parseValue	AcDc.c	/^Expression *parseValue( FILE *source )$/;"	f
+parser	AcDc.c	/^Program parser( FILE *source )$/;"	f
+print_expr	AcDc.c	/^void print_expr(Expression *expr)$/;"	f
+rest	header.h	/^    struct Declarations *rest;$/;"	m	struct:Declarations	typeref:struct:Declarations::Declarations
+rest	header.h	/^    struct Statements *rest;$/;"	m	struct:Statements	typeref:struct:Statements::Statements
+rightOperand	header.h	/^    struct Expression *rightOperand;$/;"	m	struct:Expression	typeref:struct:Expression::Expression
+scanner	AcDc.c	/^Token scanner( FILE *source )$/;"	f
+statements	header.h	/^    Statements *statements;$/;"	m	struct:Program
+stmt	header.h	/^    }stmt;$/;"	m	struct:Statement	typeref:union:Statement::__anon2
+test_parser	AcDc.c	/^void test_parser( FILE *source )$/;"	f
+tok	header.h	/^    char tok[1025];$/;"	m	struct:Token
+type	header.h	/^	DataType type;$/;"	m	struct:SymbolTableEntry
+type	header.h	/^    DataType type;      \/* For type checking to store the type of all expression on the right. *\/$/;"	m	struct:AssignmentStatement
+type	header.h	/^    DataType type;$/;"	m	struct:Declaration
+type	header.h	/^    DataType type;$/;"	m	struct:Expression
+type	header.h	/^    StmtType type;$/;"	m	struct:Statement
+type	header.h	/^    TokenType type;$/;"	m	struct:Token
+type	header.h	/^    ValueType type;$/;"	m	struct:Value
+v	header.h	/^    Value v;$/;"	m	struct:Expression
+val	header.h	/^    }val;$/;"	m	struct:Value	typeref:union:Value::__anon1
+variable	header.h	/^		char variable[ID_MAX_SIZE];$/;"	m	union:Statement::__anon2

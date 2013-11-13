@@ -1,0 +1,12 @@
+Data Structures:
+  1. Define macro "ID_MAX_SIZE" to measure the maximum length of identifier that can be supported by AC
+  2. struct Declaration: char name; --> char name[ID_MAX_SIZE];
+  3. sturct Value: char id; --> char id[ID_MAX_SIZE];
+  4. struct AssignmentStatement: char id; --> char id[ID_MAX_SIZE];
+  5. struct SymbolTable
+  6. struct SymbolTableEntry (added)
+
+Function definition:
+  1. makeAssignmentNode
+  2. makePrintNode
+  3. add_table

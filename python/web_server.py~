@@ -1,0 +1,42 @@
+# import socket module
+
+from socket import *
+
+serverSocket = socket(AF_INET, SOCK_STREAM)
+# Prepare a server socket
+
+serverPort = 6789
+serverName = 'localhost'
+serverSocket.bind((serverName, serverPort))
+serverSocket.listen(1)
+
+responseHeader = 'HTTP/1.1 200 OK\n Connection: close\n'
+while True:
+	# Establish the connection
+	print('Ready to serve...')
+	
+	connectionSocket, clientAddr = serverSocket.accept()
+
+	try:
+		message = connectionSocket.recv(2048)
+               # filename = message.split()[1].decode()
+                
+		f = open("hello.html")
+		outputdata = f.read()
+		print(bytes(outputdata, 'utf-8'))		
+                f.close()
+		# Send one HTTP header line into socket
+		connectionSocket.send(bytes(responseHeader, 'utf-8'))
+
+		# Send the content of the requested file to the client
+		for i in range(0, len(outputdata)):
+			connectionSocket.send(bytes(outputdata[i], 'utf-8'))
+		connectionSocket.close()
+	except IOError:
+		# Send response message for file not found
+		connectionSocket.send(bytes("404 Not Found", 'utf-8'))
+				
+		# Close client socket
+		connectionSocket.close()
+	
+serverSocket.close()
